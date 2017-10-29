@@ -97,7 +97,6 @@ www/fonts
 /ionic.config.json
 /appConfig.json
 externalServices.json
-app-template/bitpay-wallet
 src/js/appConfig.js
 src/js/externalServices.js
 chrome-app/manifest.json
