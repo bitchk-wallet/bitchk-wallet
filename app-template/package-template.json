@@ -3,7 +3,7 @@
     "description": "*DESCRIPTION*",
     "author": "BitChk",
     "version": "*VERSION*",
-    "config": { "target": "*PACKAGENAME*" },
+    "config": { "app-target": "*PACKAGENAME*" },
     "keywords": [
         "bitcoin",
         "wallet",

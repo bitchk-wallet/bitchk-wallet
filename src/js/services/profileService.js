@@ -377,7 +377,7 @@ angular.module('copayApp.services')
                         coin: opts.coin
                     });
                 } catch (e) {
-                    $log.info('Error creating recovery phrase: ' + e.message);
+                    $log.info('Error creating recovery phrase: ' + e.message + ",lang:" + lang);
                     if (e.message.indexOf('language') > 0) {
                         $log.info('Using default language for recovery phrase');
                         walletClient.seedFromRandomWithMnemonic({
