@@ -23,8 +23,8 @@
     "windowsAppId": "",
     "pushSenderId": "",
     "description": "A Secure PaxCoin Wallet",
-    "version": "3.8.3",
-    "androidVersion": "383001",
+    "version": "3.8.6",
+    "androidVersion": "386001",
     "_extraCSS": null,
     "_enabledExtensions": {
         "coinbase": false,

@@ -23,8 +23,8 @@
     "windowsAppId": "",
     "pushSenderId": "",
     "description": "A Secure SearchCoin Wallet",
-    "version": "3.8.5",
-    "androidVersion": "385001",
+    "version": "3.8.6",
+    "androidVersion": "386001",
     "_extraCSS": null,
     "_enabledExtensions": {
         "coinbase": false,
