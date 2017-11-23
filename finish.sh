@@ -6,5 +6,5 @@ then
   exit
 fi
 
-npm run clean-all&&npm run apply:target --target=$1&&npm run final:android --pass=$2&&npm run final:ios;npm run open:ios;grunt pack-all
+npm run clean-all&&git pull&&npm run apply:target --target=$1&&npm run final:android --pass=$2&&npm run final:ios;npm run open:ios;grunt pack-all
 #cordova run android --device;cordova run ios --device
