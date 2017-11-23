@@ -6,4 +6,4 @@ then
   exit
 fi
 
-npm run clean-all&&npm run apply:target --target=$1&&npm run final:android --pass=$2&&npm run final:ios;grunt pack-all
+npm run clean-all&&npm run apply:target --target=$1&&npm run final:android --pass=$2&&npm run final:ios;npm run open:ios;grunt pack-all
