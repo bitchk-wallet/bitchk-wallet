@@ -234,7 +234,7 @@ msgstr "누구나 귀하의 백업 문구로 귀하의 코인에 접근하고, �
 
 #: www/views/addresses.html:94
 msgid "Approximate Coin Network Fee to transfer wallet's balance (with normal priority)"
-msgstr ""
+msgstr "지갑의 잔액을 이체하기 위한 대략적인 코인 네트워크 수수료 (보통 우선 순위로)"
 
 #: www/views/backupWarning.html:10
 msgid "Are you being watched?"
@@ -246,11 +246,11 @@ msgstr "귀하를 누군가 지켜보고 있습니까? 귀하의 복구암호로
 
 #: src/js/controllers/copayers.js:56
 msgid "Are you sure you want to cancel and delete this wallet?"
-msgstr "정말로 취소하고, 이 지갑을 삭제하시겠습니까?"
+msgstr "이 지갑을 취소하고 삭제 하시겠습니까?"
 
 #: src/js/controllers/addressbookView.js:24
 msgid "Are you sure you want to delete this contact?"
-msgstr "이 연락처를 진짜로 삭제하시겠습니까?"
+msgstr "이 연락처를 삭제하시겠습니까?"
 
 #: src/js/controllers/preferencesDelete.js:25
 msgid "Are you sure you want to delete this wallet?"
@@ -299,7 +299,7 @@ msgstr "평균 확정 시간"
 #: www/views/tab-create-shared.html:142
 #: www/views/tab-import-phrase.html:51
 msgid "BIP32 path for address derivation"
-msgstr ""
+msgstr "주소 유도를 위한 BIP32 경로"
 
 #: www/views/cashScan.html:22
 msgid "BTC Wallets"
@@ -337,11 +337,11 @@ msgstr "이 기능을 사용하기 전에 귀하의 지갑을 백업하세요"
 
 #: src/js/services/profileService.js:445
 msgid "Bad wallet invitation"
-msgstr "잘못된 지갑초대"
+msgstr "잘못된 지갑 초대"
 
 #: www/views/preferencesInformation.html:102
 msgid "Balance By Address"
-msgstr "주소의 잔액"
+msgstr "주소 별 잔액"
 
 #: www/views/includes/confirmBackupPopup.html:7
 msgid "Be sure to store your recovery phrase in a secure place. If this app is deleted, your money cannot be recovered without it."
@@ -2151,7 +2151,7 @@ msgstr "처리중"
 
 #: www/views/proposals.html:4
 msgid "Pending Proposals"
-msgstr "제안 처리중"
+msgstr "제안 대기중"
 
 #: www/views/preferencesDeleteWallet.html:13
 msgid "Permanently delete this wallet."
@@ -2163,11 +2163,11 @@ msgstr "개인지갑"
 
 #: www/views/backup.html:18
 msgid "Please carefully write down this phrase."
-msgstr "정확한 단어들을 아래에 적어주세요."
+msgstr "이 문구를 주의 깊게 적어주십시오.."
 
 #: www/views/tab-scan.html:20
 msgid "Please connect a camera to get started."
-msgstr "시작되면 카메라를 연력해주세요."
+msgstr "시작하려면 카메라를 연결하십시오."
 
 #: src/js/controllers/import.js:277
 msgid "Please enter the recovery phrase"
@@ -2176,7 +2176,7 @@ msgstr "복구단어를 입력해주세요"
 #: src/js/controllers/create.js:174
 #: src/js/controllers/join.js:139
 msgid "Please enter the wallet recovery phrase"
-msgstr "지갑복수 문구를 입력해주세요"
+msgstr "지갑 복구 구문을 입력하십시오."
 
 #: www/views/modals/pin.html:9
 msgid "Please enter your PIN"
@@ -2188,7 +2188,7 @@ msgstr "정확한 순서대로 각 단어들을 탭 해주세요."
 
 #: src/js/services/bwcError.js:101
 msgid "Please upgrade Copay to perform this action"
-msgstr 이 작업을 위해서 어플리케이션을 upgrade 해야 합니다.""
+msgstr "이 작업을 위해서 어플리케이션을 upgrade 해야 합니다."
 
 #: www/views/walletDetails.html:142
 #: www/views/walletDetails.html:62
@@ -2209,7 +2209,7 @@ msgstr "환경설정"
 
 #: src/js/services/onGoingProcess.js:38
 msgid "Preparing addresses..."
-msgstr "주소들 준비중..."
+msgstr "주소 준비중..."
 
 #: src/js/controllers/export.js:198
 msgid "Preparing backup..."
@@ -2267,7 +2267,7 @@ msgstr ""
 
 #: www/views/onboarding/notifications.html:3
 msgid "Push Notifications"
-msgstr "푸시 알림들"
+msgstr "푸시 알림"
 
 #: www/views/preferencesNotifications.html:17
 msgid "Push notifications for {{appName}} are currently disabled. Enable them in the Settings app."
