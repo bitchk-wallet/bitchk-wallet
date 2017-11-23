@@ -2798,7 +2798,7 @@ msgstr "표시하려면 길게 누릅니다"
 
 #: www/views/includes/walletInfo.html:3
 msgid "Tap to recreate"
-msgstr "다시 만들기 위해서 탬하세요"
+msgstr "다시 만들기 위해서 탭하세요"
 
 #: www/views/includes/walletInfo.html:4
 msgid "Tap to retry"
