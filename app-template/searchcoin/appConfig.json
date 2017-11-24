@@ -3,6 +3,7 @@
     "packageDescription": "Search Coin Wallet",
     "packageNameId": "com.bitchk.searchcoin",
     "statusBarColor": "#1b191a",
+    "defaultWalletColor": "#608bad",
     "userVisibleName": "SearchCoin",
     "purposeLine": "Search Coin Wallet",
     "bundleName": "searchcoin",

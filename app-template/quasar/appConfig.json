@@ -3,6 +3,7 @@
     "packageDescription": "Quasar Coin Wallet",
     "packageNameId": "com.bitchk.quasar",
     "statusBarColor": "#00b0eb",
+    "defaultWalletColor": "#608bad",
     "userVisibleName": "Quasar",
     "purposeLine": "Quasar Coin Wallet",
     "bundleName": "quasar",

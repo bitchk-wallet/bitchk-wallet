@@ -5,19 +5,20 @@
 
 /* Colors */
 
-$v-primary-color: #1958bc;
-$v-secondary-color: #5c91dc;
-$v-accent-color: #4e79ba;
-$v-text-primary-color: #f0f6fa;
-$v-bar-royal-text:#eee9e9;
-$v-text-secondary-color: #375f8c;
+//
+$v-primary-color: #1958bc; //타이틀바(상태바)
+$v-secondary-color: #5c91dc; //두번째,확인버튼등 배경 글라데이션 종료
+$v-accent-color: #000000; //버튼내 텍스트 , 경고시 버튼배경
+$v-text-primary-color: #989494; //기본 텍스트,단어 문자 색
+$v-bar-royal-text:#e6e6e6; //타이틀바(상태바)  텍스트
+$v-text-secondary-color: #383839; //설명 텍스트
 $v-text-accent-color: #383741;
 $v-success-color: #1abb9b;
 $v-warning-color: #bb331a;
 
 /* Theme */
 
-$v-default-wallet-color-index: 8;
+$v-default-wallet-color-index: 8; //기본 지갑 색상
 $v-top-tabs-color: $v-accent-color;
 $v-wallet-backup-phrase-color: $v-text-primary-color;
 $v-wallet-backup-select-phrase-color: $v-secondary-color;

@@ -3,6 +3,7 @@
     "packageDescription": "Pax Coin Wallet",
     "packageNameId": "com.bitchk.paxcoin",
     "statusBarColor": "#312308",
+    "defaultWalletColor": "#608bad",
     "userVisibleName": "PaxCoin",
     "purposeLine": "PaxCoin Wallet",
     "bundleName": "paxcoin",

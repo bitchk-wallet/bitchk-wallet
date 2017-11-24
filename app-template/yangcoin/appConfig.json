@@ -3,6 +3,7 @@
     "packageDescription": "Yang Coin Wallet",
     "packageNameId": "com.bitchk.yangcoin",
     "statusBarColor": "#186ed7",
+    "defaultWalletColor": "#608bad",
     "userVisibleName": "YangCoin",
     "purposeLine": "Yang Coin Wallet",
     "bundleName": "yangcoin",

@@ -17,6 +17,7 @@ $v-bar-royal-text:#ffffff;
 
 /* Theme */
 
+//index 가 6 이 아니면 appConfig.json 에서 기본 지갑 색상을 변경해 주어야 한다.
 $v-default-wallet-color-index: 6;
 $v-top-tabs-color: $v-accent-color;
 $v-wallet-backup-phrase-color: $v-text-primary-color;

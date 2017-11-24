@@ -3,7 +3,9 @@
 angular.module('copayApp.controllers').controller('walletDetailsController', function($scope, $rootScope,
     $interval, $timeout, $filter, $log, $ionicModal, $ionicPopover, $state, $stateParams,
     $ionicHistory, profileService, lodash, configService,
-    platformInfo, walletService, txpModalService, externalLinkService, popupService, addressbookService, storageService, $ionicScrollDelegate, $window, bwcError, gettextCatalog, timeService, feeService, appConfigService) {
+    platformInfo, walletService, txpModalService, externalLinkService,
+    popupService, addressbookService, storageService, $ionicScrollDelegate, $window, bwcError,
+    gettextCatalog, timeService, feeService, appConfigService) {
 
     var HISTORY_SHOW_LIMIT = 10;
     var currentTxHistoryPage = 0;
@@ -347,6 +349,7 @@ angular.module('copayApp.controllers').controller('walletDetailsController', fun
     var scrollWatcherInitialized;
 
     $scope.$on("$ionicView.enter", function(event, data) {
+
         if ($scope.isCordova && $scope.isAndroid) setAndroidStatusBarColor();
         if (scrollWatcherInitialized || !$scope.amountIsCollapsible) {
             return;
@@ -403,7 +406,7 @@ angular.module('copayApp.controllers').controller('walletDetailsController', fun
     function setAndroidStatusBarColor() {
         var SUBTRACT_AMOUNT = 15;
         var walletColor;
-        if (!$scope.wallet.color) walletColor = '#608bad';
+        if (!$scope.wallet.color) walletColor = appConfigService.defaultWalletColor;
         else walletColor = $scope.wallet.color;
         var rgb = hexToRgb(walletColor);
         var keys = Object.keys(rgb);

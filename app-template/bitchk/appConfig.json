@@ -3,6 +3,7 @@
     "packageDescription": "BCheck Coin Wallet",
     "packageNameId": "com.bitchk.bitchk",
     "statusBarColor": "#192c3a",
+    "defaultWalletColor": "#608bad",
     "userVisibleName": "BCheck",
     "purposeLine": "BCheck Coin Wallet",
     "bundleName": "bitchk",
