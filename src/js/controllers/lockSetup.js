@@ -16,7 +16,7 @@ angular.module('copayApp.controllers').controller('lockSetupController', functio
             },
         ];
         //TODO fingerprint
-        if (false && fingerprintService.isAvailable()) {
+        if (fingerprintService.isAvailable()) {
             $scope.options.push({
                 method: 'fingerprint',
                 label: gettextCatalog.getString('Lock by Fingerprint'),

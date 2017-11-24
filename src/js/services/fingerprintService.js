@@ -14,9 +14,9 @@ angular.module('copayApp.services').factory('fingerprintService', function($log,
             function(msg) {
                 FingerprintAuth.isAvailable(function(result) {
                     //TODO fingerprint
-                    // if (result.isAvailable)
-                    //     _isAvailable = 'ANDROID';
-                    _isAvailable = false;
+                    if (result.isAvailable)
+                        _isAvailable = 'ANDROID';
+                    //_isAvailable = false;
                 }, function() {
                     _isAvailable = false;
                 });
@@ -25,25 +25,40 @@ angular.module('copayApp.services').factory('fingerprintService', function($log,
 
     var requestFinger = function(cb) {
         try {
-            FingerprintAuth.show({
-                    clientId: 'Bitchk',
-                    clientSecret: 'LDkgtrpERgx',
-                },
+            var encryptConfig = {
+                clientId: 'bitchk.com',
+                disableBackup: true
+                    // dialogTitle: "sss",
+                    // dialogMessage: "xxxx",
+                    // dialogHint: "bbb"
+            };
+            //TODO not work withBackup is true....
+            FingerprintAuth.encrypt(encryptConfig,
                 function(result) {
-                    if (result.withFingerprint) {
+                    if (result.withFingerprint || result.withBackup) {
                         $log.info('Finger OK');
                         return cb();
                     } else if (result.withPassword) {
                         $log.info("Finger: Authenticated with backup password");
                         return cb();
+                    } else if (result.withBackup) {
+                        result.withFingerprint = true;
+
+                        $log.info("Finger: Authenticated with backup");
+                        return cb();
+                    } else {
+
+                        return cb(gettextCatalog.getString('Finger Scan Failed Unkown Method'));
                     }
                 },
                 function(msg) {
+
                     $log.info('Finger Failed:' + JSON.stringify(msg));
                     return cb(gettextCatalog.getString('Finger Scan Failed'));
                 }
             );
         } catch (e) {
+
             $log.warn('Finger Scan Failed:' + JSON.stringify(e));
             return cb(gettextCatalog.getString('Finger Scan Failed'));
         };
@@ -89,9 +104,9 @@ angular.module('copayApp.services').factory('fingerprintService', function($log,
             if (_isAvailable == 'IOS')
                 return requestTouchId(cb);
             else {
-                //TODO
-                //return requestFinger(cb);
-                return cb();
+                //TODO finger
+                return requestFinger(cb);
+                //return cb();
             }
         } else {
             return cb();

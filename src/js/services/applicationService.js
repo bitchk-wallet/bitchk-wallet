@@ -54,11 +54,15 @@ angular.module('copayApp.services')
             };
             scope.hideModal = function() {
                 root.isModalOpen = false;
+
                 scope.fingerprintCheckModal.hide();
             };
             scope.checkFingerprint = function() {
                 fingerprintService.check('unlockingApp', function(err) {
-                    if (err) return;
+                    if (err) {
+                        console.log("error", err);
+                        return;
+                    }
                     scope.hideModal();
                 });
             }
@@ -96,9 +100,8 @@ angular.module('copayApp.services')
                 var lockMethod = config.lock && config.lock.method;
                 if (!lockMethod || lockMethod == 'none') return;
                 // TODO fingerprint 체크....
-                // if (lockMethod == 'fingerprint' && fingerprintService.isAvailable()) root.fingerprintModal();
+                if (lockMethod == 'fingerprint' && fingerprintService.isAvailable()) root.fingerprintModal();
                 if (lockMethod == 'pin') root.pinModal(action);
-
             });
         }
         return root;
