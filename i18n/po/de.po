@@ -1310,8 +1310,8 @@ msgid "Get local cash anywhere you go, from any Visa<sup>&reg;</sup> compatible 
 msgstr "Erhalten Sie Bargeld überall von einem Visa<sup>&reg;</sup> kompatiblen Bankomaten. Es fallen eventuell Bankomatgebühren an."
 
 #: www/views/onboarding/collectEmail.html:15
-msgid "Get news and updates from BitPay"
-msgstr "Erhalten Sie Neuigkeiten und Aktualisierungen von BitPay"
+msgid "Get news and updates from {{appName}}"
+msgstr "Erhalten Sie Neuigkeiten und Aktualisierungen von {{appName}}"
 
 #: www/views/onboarding/welcome.html:8
 msgctxt "button"

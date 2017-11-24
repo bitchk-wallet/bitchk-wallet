@@ -1310,8 +1310,8 @@ msgid "Get local cash anywhere you go, from any Visa<sup>&reg;</sup> compatible 
 msgstr "得到当地现金任何地方您去，从任何 Visa<sup>®</sup> 兼容的自动取款机 ATM 银行费用可能适用。"
 
 #: www/views/onboarding/collectEmail.html:15
-msgid "Get news and updates from BitPay"
-msgstr "从 BitPay 获取新闻和更新"
+msgid "Get news and updates from {{appName}}"
+msgstr "从 {{appName}} 获取新闻和更新"
 
 #: www/views/onboarding/welcome.html:8
 msgctxt "button"

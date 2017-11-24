@@ -1310,8 +1310,8 @@ msgid "Get local cash anywhere you go, from any Visa<sup>&reg;</sup> compatible 
 msgstr ""
 
 #: www/views/onboarding/collectEmail.html:15
-msgid "Get news and updates from BitPay"
-msgstr "비체크로부터 새로운 뉴스와 업데이트 정보를 받겠습니다"
+msgid "Get news and updates from {{appName}}"
+msgstr "{{appName}} 으로 부터 새로운 뉴스와 업데이트 정보를 받겠습니다"
 
 #: www/views/onboarding/welcome.html:8
 msgctxt "button"

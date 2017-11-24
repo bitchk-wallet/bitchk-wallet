@@ -1312,8 +1312,8 @@ msgid "Get local cash anywhere you go, from any Visa<sup>&reg;</sup> compatible 
 msgstr "Visa<sup>&reg;</sup>カード対応ATMから現地通貨をいつでも引き出せます。ATMの手数料はATMによって異なります。"
 
 #: www/views/onboarding/collectEmail.html:15
-msgid "Get news and updates from BitPay"
-msgstr "BitPay からのニュースや更新情報を受け取ります。"
+msgid "Get news and updates from {{appName}}"
+msgstr "{{appName}} からのニュースや更新情報を受け取ります。"
 
 #: www/views/onboarding/welcome.html:8
 msgctxt "button"

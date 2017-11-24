@@ -1310,7 +1310,7 @@ msgid "Get local cash anywhere you go, from any Visa<sup>&reg;</sup> compatible 
 msgstr "Sacar dinheiro em qualquer lugar que você vá, de qualquer Caixa Eletrônico Visa<sup>&reg;</sup> compatível. Tarifas bancárias podem ser geradas."
 
 #: www/views/onboarding/collectEmail.html:15
-msgid "Get news and updates from BitPay"
+msgid "Get news and updates from {{appName}}"
 msgstr "Receba notícias e atualizações da BitPay"
 
 #: www/views/onboarding/welcome.html:8
