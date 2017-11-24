@@ -135,7 +135,7 @@ msgid "Add funds"
 msgstr "資金を追加"
 
 #: src/js/services/bitpayAccountService.js:78
-msgid "Add this BitPay account ({{email}})?"
+msgid "Add this {{appName}} account ({{email}})?"
 msgstr "このBitPayアカウント ({{email}}) を追加しますか？"
 
 #: www/views/add.html:3
@@ -229,7 +229,7 @@ msgid "An update to this app is available. For your security, please update to t
 msgstr "このアプリのアップデートがあります。セキュリティーを保持するために最新版にアップデートして下さい。"
 
 #: www/views/backupWarning.html:14
-msgid "Anyone with your backup phrase can access or spend your bitcoin."
+msgid "Anyone with your backup phrase can access or spend your coin."
 msgstr "復元フレーズを知る者はあなたのビットコインが勝手に送れてしまいます。"
 
 #: www/views/addresses.html:94

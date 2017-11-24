@@ -180,6 +180,7 @@ angular.module('copayApp.controllers').controller('createController',
 
             } else {
                 opts.passphrase = $scope.formData.createPassphrase;
+
             }
 
             if (setSeed && !opts.mnemonic && !opts.extendedPrivateKey) {

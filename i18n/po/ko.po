@@ -15,7 +15,7 @@ msgstr ""
 
 #: www/views/modals/paypro.html:34
 msgid "(Trusted)"
-msgstr "(신뢰함)"
+msgstr "(신뢰됨)"
 
 #: www/views/includes/txp.html:23
 #: www/views/includes/walletHistory.html:64
@@ -135,8 +135,8 @@ msgid "Add funds"
 msgstr "자금 추가"
 
 #: src/js/services/bitpayAccountService.js:78
-msgid "Add this BitPay account ({{email}})?"
-msgstr "이메일을 BitChk 계정에 추가 ({{email}})?"
+msgid "Add this {{appName}} account ({{email}})?"
+msgstr ""
 
 #: www/views/add.html:3
 msgid "Add wallet"
@@ -167,7 +167,7 @@ msgstr "고급"
 
 #: www/views/advancedSettings.html:3
 msgid "Advanced Settings"
-msgstr "고급설정들"
+msgstr "고급설정"
 
 #: www/views/bitpayCard.html:62
 msgid "All"
@@ -175,7 +175,7 @@ msgstr "전체"
 
 #: www/views/allAddresses.html:3
 msgid "All Addresses"
-msgstr "전체 주소들"
+msgstr "전체 주소"
 
 #: www/views/modals/wallet-balance.html:18
 msgid "All of your bitcoin wallet balance may not be available for immediate spending."
@@ -226,10 +226,10 @@ msgstr "사용하기에 금액이 너무 적습니다"
 
 #: src/js/controllers/tab-home.js:147
 msgid "An update to this app is available. For your security, please update to the latest version."
-msgstr ""
+msgstr "이 버전은 업데이트가 가능합니다. 보안을 위해서 최신 버전으로 업데이트 해주세요."
 
 #: www/views/backupWarning.html:14
-msgid "Anyone with your backup phrase can access or spend your bitcoin."
+msgid "Anyone with your backup phrase can access or spend your coin."
 msgstr "누구나 귀하의 백업 문구로 귀하의 코인에 접근하고, 사용할수 있습니다."
 
 #: www/views/addresses.html:94
@@ -279,7 +279,7 @@ msgstr ""
 
 #: www/views/includes/walletInfo.html:10
 msgid "Auditable"
-msgstr ""
+msgstr "검증대상"
 
 #: www/views/modals/wallet-balance.html:42
 msgid "Available"
@@ -341,7 +341,7 @@ msgstr "잘못된 지갑 초대"
 
 #: www/views/preferencesInformation.html:102
 msgid "Balance By Address"
-msgstr "주소 별 잔액"
+msgstr "주소별 잔액"
 
 #: www/views/includes/confirmBackupPopup.html:7
 msgid "Be sure to store your recovery phrase in a secure place. If this app is deleted, your money cannot be recovered without it."
@@ -1267,7 +1267,7 @@ msgstr ""
 
 #: www/views/tab-export-qrCode.html:5
 msgid "From the destination device, go to Add wallet &gt; Import wallet and scan this QR code"
-msgstr ""
+msgstr "이동하려는 단말의 지갑에서 지갑추가 &gt; 지갑가져오기 로 이동하신후 이 QR Code 를 스캔하세요"
 
 #: src/js/services/bwcError.js:74
 msgid "Funds are locked by pending spend proposals"
@@ -2624,7 +2624,7 @@ msgstr ""
 
 #: www/views/tab-export-file.html:10
 msgid "Set up a password"
-msgstr "암로 설정"
+msgstr "암호 설정"
 
 #: src/js/controllers/preferencesFee.js:85
 msgid "Set your own fee in satoshis/byte"
@@ -3136,7 +3136,7 @@ msgstr "복구 문장 검증중..."
 
 #: www/views/modals/fingerprintCheck.html:4
 msgid "Verify your identity"
-msgstr "귀하의 신원 확인"
+msgstr "신원 확인"
 
 #: www/views/preferencesAbout.html:14
 #: www/views/preferencesExternal.html:25
@@ -3158,7 +3158,7 @@ msgstr "서비스 이용약관 보기"
 #: src/js/controllers/bitpayCard.js:122
 #: src/js/controllers/tx-details.js:191
 msgid "View Transaction on Insight"
-msgstr "Insight 에서 거래 보기"
+msgstr "인사이트에서 거래 보기"
 
 #: src/js/controllers/tab-home.js:148
 msgid "View Update"
@@ -3178,7 +3178,7 @@ msgstr ""
 
 #: www/views/tab-export-file.html:45
 msgid "WARNING: Not including the private key allows to check the wallet balance, transaction history, and create spend proposals from the export. However, does not allow to approve (sign) proposals, so <b>funds will not be accessible from the export</b>."
-msgstr ""
+msgstr "경고: 비공개 키를 포함하지 않으면 지갑 잔액, 거래 내역을 확인하고 내보내기에서 제안서를 작성할 수 있습니다. 그러나 제안을 승인(서명)할 수 없으므로 <b> 내보내기에서 자금에 액세스 할 수 없습니다.</br>"
 
 #: www/views/tab-export-file.html:36
 msgid "WARNING: The private key of this wallet is not available. The export allows to check the wallet balance, transaction history, and create spend proposals from the export. However, does not allow to approve (sign) proposals, so <b>funds will not be accessible from the export</b>."
@@ -3269,7 +3269,7 @@ msgstr "지갑 복구 문장이 잘못되었습니다"
 #: www/views/preferencesAdvanced.html:25
 #: www/views/tab-import-phrase.html:73
 msgid "Wallet Service URL"
-msgstr ""
+msgstr "지갑서비스URL"
 
 #: www/views/preferences.html:4
 msgid "Wallet Settings"
@@ -3495,7 +3495,7 @@ msgstr "귀하의 코인 지갑이 준비되었습니다."
 
 #: www/views/modals/chooseFeeLevel.html:61
 msgid "Your fee is lower than recommended."
-msgstr "수수로가 너무 적습니다"
+msgstr "수수료가 너무 적습니다"
 
 #: www/views/feedback/send.html:42
 msgid "Your ideas, feedback, or comments"
@@ -3503,16 +3503,16 @@ msgstr "귀하의 의견,또는 요구사항"
 
 #: www/views/tab-create-shared.html:22
 msgid "Your name"
-msgstr "귀하의 이름"
+msgstr "이름"
 
 #: www/views/join.html:16
 msgid "Your nickname"
-msgstr "귀하의 별명"
+msgstr "별명"
 
 #: www/views/tab-export-file.html:11
 #: www/views/tab-import-file.html:20
 msgid "Your password"
-msgstr "귀하의 암호"
+msgstr "암호"
 
 #: www/views/buyAmazon.html:102
 msgid "Your purchase could not be completed"
@@ -3528,7 +3528,7 @@ msgstr "귀하의 지갑은 클라우드 저장소나 백업장비에 저장되�
 
 #: src/js/services/walletService.js:1030
 msgid "Your wallet key will be encrypted. The Spending Password cannot be recovered. Be sure to write it down."
-msgstr "귀하의 지갑키가 암호화됩니다. 전송 암호는 복구될수 없습니다. 아래의 문장을 확인하세요."
+msgstr "귀하의 지갑키가 암호화됩니다. 전송 암호는 복구될 수 없습니다. 문장을 잘 적어 두십시오."
 
 #: www/views/includes/walletSelector.html:23
 #: www/views/paperWallet.html:35
