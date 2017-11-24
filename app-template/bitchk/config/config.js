@@ -39,7 +39,7 @@ var COIN_CONFIG = {
         coin: 'qct',
         displayName: "QCT",
         coinName: "QCity",
-        enable: true,
+        enable: false,
     },
     qac: {
         bwsurl: 'https://bws.bitchk.com/bws/api',
@@ -47,7 +47,7 @@ var COIN_CONFIG = {
         coin: 'qac',
         displayName: "QAC",
         coinName: "Quasar",
-        enable: true,
+        enable: false,
     },
     pax: {
         bwsurl: 'https://bws.bitchk.com/bws/api',
@@ -55,7 +55,7 @@ var COIN_CONFIG = {
         coin: 'pax',
         displayName: "PAX",
         coinName: "Paxcoin",
-        enable: true,
+        enable: false,
     },
     ssc: {
         bwsurl: 'https://bws.bitchk.com/bws/api',
@@ -63,7 +63,7 @@ var COIN_CONFIG = {
         coin: 'ssc',
         displayName: "SSC",
         coinName: "SearchCoin",
-        enable: true,
+        enable: false,
     },
     yng: {
         bwsurl: 'https://bws.bitchk.com/bws/api',
@@ -71,6 +71,6 @@ var COIN_CONFIG = {
         coin: 'yng',
         displayName: "YNG",
         coinName: "YangCoin",
-        enable: true,
+        enable: false,
     }
 }
