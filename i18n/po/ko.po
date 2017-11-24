@@ -3136,7 +3136,7 @@ msgstr "복구 문장 검증중..."
 
 #: www/views/modals/fingerprintCheck.html:4
 msgid "Verify your identity"
-msgstr "귀의 신원 확인"
+msgstr "귀하의 신원 확인"
 
 #: www/views/preferencesAbout.html:14
 #: www/views/preferencesExternal.html:25
