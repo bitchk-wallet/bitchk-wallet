@@ -4,6 +4,7 @@
   </div>
   <select ng-model="formData.coin" ng-change="switchTestnetOff()"
      >
+     <option  value=""></option>
      <option
      value="{{config.coin}}"
      ng-repeat="config in COIN_CONFIG" ng-if="config.enable"
@@ -12,4 +13,11 @@
    </option>
     <!-- <option value="bch">BCH</option> -->
   </select>
+  <input type="text" list="cars" />
+  <datalist id="cars">
+    <option>Bitcoin</option>
+    <option>LiteCoin</option>
+    <option>ETC</option>
+    <option>Audi</option>
+  </datalist>
 </label>

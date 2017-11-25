@@ -66,6 +66,7 @@ angular.module('copayApp.controllers').controller('importController',
         };
 
         $scope.switchTestnetOff = function() {
+            console.log("switch....");
             $scope.formData.testnetEnabled = false;
             $scope.setDerivationPath();
             $scope.resizeView();
