@@ -62,7 +62,9 @@ angular.module('copayApp.controllers').controller('tabHomeController',
                     }
                     var now = moment().unix();
                     var timeExceeded = (now - feedbackInfo.time) >= 24 * 7 * 60 * 60;
-                    $scope.showRateCard.value = timeExceeded && !feedbackInfo.sent;
+                    //TODO
+                    //$scope.showRateCard.value = timeExceeded && !feedbackInfo.sent;
+                    $scope.showRateCard.value = false; //timeExceeded && !feedbackInfo.sent;
                     $timeout(function() {
                         $scope.$apply();
                     });
