@@ -2949,7 +2949,7 @@ msgstr "이 비트코인 결제 요청은 만료되었습니다"
 #: www/views/tab-create-personal.html:103
 #: www/views/tab-create-shared.html:132
 msgid "This password cannot be recovered. If the password is lost, there is no way you could recover your funds."
-msgstr "이 암호는 복구될수 없습니다. 만역 암호를 잃어버렸으면, 귀하의 자금을 복구할수 있는 방법은 하나도 없습니다."
+msgstr "이 암호는 복구될수 없습니다. 만약 암호를 잃어버렸으면, 귀하의 자금을 복구할수 있는 방법은 하나도 없습니다."
 
 #: www/views/backup.html:24
 msgid "This recovery phrase was created with a password. To recover this wallet both the recovery phrase and password are needed."
