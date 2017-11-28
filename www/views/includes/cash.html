@@ -1,15 +1,33 @@
-<label class="item item-input item-select">
+<label ng-if="DEFAULT_CONFIG.coin" class="item item-input item-select">
   <div class="input-label" translate>
     Coin
   </div>
-  <select ng-model="formData.coin" ng-change="switchTestnetOff()"
-     >
+
+  <select ng-if="DEFAULT_CONFIG.coin" ng-model="formData.coin" ng-change="switchTestnetOff()">
      <option
-     value="{{config.coin}}"
      ng-repeat="config in COIN_CONFIG" ng-if="config.enable"
+     value="{{config.coin}}"
      ng-selected="DEFAULT_CONFIG.coin == config.coin">
      {{config.coinName}}
    </option>
+
     <!-- <option value="bch">BCH</option> -->
   </select>
+</label>
+<!-- no default coin -->
+<label ng-if="!DEFAULT_CONFIG.coin" class="item item-input ">
+  <div class="input-label" translate>
+    Coin
+  </div>
+  <i ng-if="formData.coin" class="icon big-icon-svg" ng-include="'views/includes/walletIcon.html'"></i>
+  {{formData.coinName}}
+  <input class="text-right " type="text"
+  placeholder="{{'Type Coin Unit (ex.BTC, LTC) '|translate}}"
+  ng-model="formData.coinUnit"
+  ng-required="true"
+  ng-focus="formFocus('coin-unit')"
+  ng-blur="formFocus(false)"
+  required>
+
+
 </label>

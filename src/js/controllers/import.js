@@ -1,7 +1,9 @@
 'use strict';
 
 angular.module('copayApp.controllers').controller('importController',
-    function($scope, $timeout, $log, $state, $stateParams, $ionicHistory, $ionicScrollDelegate, profileService, configService, sjcl, ledger, trezor, derivationPathHelper, platformInfo, bwcService, ongoingProcess, walletService, popupService, gettextCatalog, appConfigService, hwWallet) {
+    function($scope, $timeout, $log, $state, $stateParams, bitcore,
+        $ionicHistory, $ionicScrollDelegate, profileService, configService,
+        sjcl, ledger, trezor, derivationPathHelper, platformInfo, bwcService, ongoingProcess, walletService, popupService, gettextCatalog, appConfigService, hwWallet) {
 
         var reader = new FileReader();
         var defaults = configService.getDefaults();
@@ -16,7 +18,7 @@ angular.module('copayApp.controllers').controller('importController',
             $scope.formData.bwsurl = defaults.bws.url;
             $scope.formData.derivationPath = derivationPathHelper.default;
             $scope.formData.account = 1;
-            $scope.formData.coin = $scope.DEFAULT_CONFIG.coin;
+            //$scope.formData.coin = $scope.DEFAULT_CONFIG.coin;
             $scope.importErr = false;
             $scope.isCopay = appConfigService.name == 'copay';
             $scope.fromHardwareWallet = {
@@ -419,5 +421,25 @@ angular.module('copayApp.controllers').controller('importController',
             $scope.showAdv = false;
             $scope.init();
         });
+        if (!$scope.DEFAULT_CONFIG.coin) {
+            $scope.$watch('formData.coinUnit', function(newValue, oldValue) {
+                if (newValue == undefined) {
+                    $scope.formData.coin = null;
+                    return;
+                }
 
+                var net = bitcore.Networks.get(newValue.trim().toLowerCase(), "coin");
+                if (net) {
+                    $scope.formData.coin = net.coin;
+                    $scope.formData.coinName = net.coinName;
+                    if (!$scope.wallet)
+                        $scope.wallet = {};
+                    $scope.wallet.network = net.name;
+                    $scope.wallet.coin = net.coin;
+                } else {
+                    $scope.formData.coinName = null;
+                    $scope.formData.coin = null;
+                }
+            });
+        }
     });

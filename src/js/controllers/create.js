@@ -1,7 +1,8 @@
 'use strict';
 
 angular.module('copayApp.controllers').controller('createController',
-    function($scope, $rootScope, $timeout, $log, lodash, $state, $ionicScrollDelegate, $ionicHistory, profileService,
+    function(
+        $scope, $rootScope, $timeout, $log, lodash, $state, $ionicScrollDelegate, $ionicHistory, profileService,
         configService, gettextCatalog, ledger, trezor, intelTEE, derivationPathHelper, ongoingProcess, walletService, storageService,
         popupService, appConfigService, pushNotificationsService, bitcore) {
 
@@ -271,5 +272,27 @@ angular.module('copayApp.controllers').controller('createController',
                     } else $state.go('tabs.home');
                 });
             }, 300);
+        }
+        if (!$scope.DEFAULT_CONFIG.coin) {
+            $scope.$watch('formData.coinUnit', function(newValue, oldValue) {
+                if (newValue == undefined) {
+                    console.log("....");
+                    $scope.formData.coin = null;
+                    return;
+                }
+
+                var net = bitcore.Networks.get(newValue.trim().toLowerCase(), "coin");
+                if (net) {
+                    $scope.formData.coin = net.coin;
+                    $scope.formData.coinName = net.coinName;
+                    if (!$scope.wallet)
+                        $scope.wallet = {};
+                    $scope.wallet.network = net.name;
+                    $scope.wallet.coin = net.coin;
+                } else {
+                    $scope.formData.coinName = null;
+                    $scope.formData.coin = null;
+                }
+            });
         }
     });
