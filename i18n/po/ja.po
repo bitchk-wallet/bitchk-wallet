@@ -136,7 +136,7 @@ msgstr "資金を追加"
 
 #: src/js/services/bitpayAccountService.js:78
 msgid "Add this {{appName}} account ({{email}})?"
-msgstr "このBitPayアカウント ({{email}}) を追加しますか？"
+msgstr "この {{appName}} アカウント ({{email}}) を追加しますか？"
 
 #: www/views/add.html:3
 msgid "Add wallet"

@@ -3596,3 +3596,6 @@ msgstr ""
 
 msgid "Coin"
 msgstr "코인"
+
+msgid "Type Coin Unit (ex.BTC, LTC)"
+msgstr "코인의 단위를 입력하세요.(예. BTC,LTC )"
