@@ -563,11 +563,7 @@ angular.module('copayApp.services')
         };
 
         root.importWallet = function(str, opts, cb) {
-            console.log(str, opts);
             var walletClient = bwcService.getClient(null, opts);
-
-            $log.info('Importing Wallet:', opts);
-
             try {
                 var c = JSON.parse(str);
 
@@ -639,7 +635,7 @@ angular.module('copayApp.services')
                 var network = bitcore.Networks.get(opts.coin, "coin");
                 opts.networkName = network.name;
             }
-            $log.info('Importing Wallet Mnemonic', opts, words);
+
             words = root._normalizeMnemonic(words);
 
             walletClient.importFromMnemonic(words, {
@@ -710,8 +706,9 @@ angular.module('copayApp.services')
             var opts = {};
             opts.m = 1;
             opts.n = 1;
-            opts.networkName = DEFAULT_CONFIG.networkName;
-            opts.coin = DEFAULT_CONFIG.coin;
+
+            opts.coin = DEFAULT_CONFIG.coin || "btc";
+            opts.networkName = COIN_CONFIG[opts.coin].network;
             opts.bwsurl = DEFAULT_CONFIG.bwsurl;
             root.createWallet(opts, cb);
         };
@@ -781,6 +778,15 @@ angular.module('copayApp.services')
             if (opts.coin) {
                 ret = lodash.filter(ret, function(x) {
                     return (x.credentials.coin == opts.coin);
+                });
+            }
+            if (opts.walletName) {
+                ret = lodash.filter(ret, function(x) {
+                    // console.log(x);
+                    // console.log(opts);
+                    // console.log(opts.walletName);
+                    // console.log(x.name, x.name == opts.walletName);
+                    return (x.name == opts.walletName);
                 });
             }
 

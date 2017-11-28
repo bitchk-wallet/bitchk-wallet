@@ -31,8 +31,27 @@ angular.module('copayApp.controllers').controller('createController',
             $scope.formData.bwsurl = defaults.bws.url;
             $scope.TCValues = lodash.range(2, defaults.limits.totalCopayers + 1);
             $scope.formData.derivationPath = derivationPathHelper.default;
-            $scope.formData.coin = $scope.DEFAULT_CONFIG.coin;
 
+            //from param coin and walletName
+            //
+            if ($state.params && $state.params.coin) {
+                $scope.formData.coin = $state.params.coin;
+                $scope.formData.coinUnit = $state.params.coin;
+            } else
+                $scope.formData.coin = $scope.DEFAULT_CONFIG.coin;
+
+            if ($state.params && $state.params.walletName && $state.params.walletName.trim().length > 0) {
+
+                var opt = { coin: $state.params.coin, walletName: $state.params.walletName };
+                var i = 1;
+                while (true) {
+                    var wallet = profileService.getWallets(opt);
+                    if (!wallet || wallet.length < 1 || i > 100) //not found same name
+                        break;
+                    opt.walletName = $state.params.walletName + "_" + i++;
+                }
+                $scope.formData.walletName = opt.walletName;
+            }
             if (config.cashSupport) $scope.enableCash = true;
 
             $scope.setTotalCopayers(tc);
@@ -276,18 +295,17 @@ angular.module('copayApp.controllers').controller('createController',
         if (!$scope.DEFAULT_CONFIG.coin) {
             $scope.$watch('formData.coinUnit', function(newValue, oldValue) {
                 if (newValue == undefined) {
-                    console.log("....");
                     $scope.formData.coin = null;
                     return;
                 }
 
-                var net = bitcore.Networks.get(newValue.trim().toLowerCase(), "coin");
+                var net = $scope.COIN_CONFIG[newValue.trim().toLowerCase()];
                 if (net) {
                     $scope.formData.coin = net.coin;
                     $scope.formData.coinName = net.coinName;
                     if (!$scope.wallet)
                         $scope.wallet = {};
-                    $scope.wallet.network = net.name;
+                    $scope.wallet.network = net.network;
                     $scope.wallet.coin = net.coin;
                 } else {
                     $scope.formData.coinName = null;

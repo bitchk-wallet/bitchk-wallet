@@ -428,13 +428,13 @@ angular.module('copayApp.controllers').controller('importController',
                     return;
                 }
 
-                var net = bitcore.Networks.get(newValue.trim().toLowerCase(), "coin");
+                var net = $scope.COIN_CONFIG[newValue.trim().toLowerCase()];
                 if (net) {
                     $scope.formData.coin = net.coin;
                     $scope.formData.coinName = net.coinName;
                     if (!$scope.wallet)
                         $scope.wallet = {};
-                    $scope.wallet.network = net.name;
+                    $scope.wallet.network = net.network;
                     $scope.wallet.coin = net.coin;
                 } else {
                     $scope.formData.coinName = null;

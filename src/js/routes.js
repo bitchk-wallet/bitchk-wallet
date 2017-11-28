@@ -125,6 +125,7 @@ angular.module('copayApp').config(function(historicLogProvider, $provide,
         .state('uri', {
             url: '/uri/:url',
             controller: function($stateParams, $log, openURLService, profileService) {
+
                 profileService.whenAvailable(function() {
                     $log.info('DEEP LINK from Browser:' + $stateParams.url);
                     openURLService.handleURL({
@@ -350,7 +351,7 @@ angular.module('copayApp').config(function(historicLogProvider, $provide,
                 },
             })
             .state('tabs.add.create-personal', {
-                url: '/create-personal',
+                url: '/create-personal/:coin/:walletName',
                 views: {
                     'tab-home@tabs': {
                         templateUrl: 'views/tab-create-personal.html',

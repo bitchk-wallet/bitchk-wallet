@@ -1,24 +1,13 @@
 var DEFAULT_CONFIG = {
     networkName: 'livenet',
-    coin: 'btc',
     bwsurl: 'https://bws.bitchk.com/bws/api',
 
-    networks: [
-        'livenet',
-        'litecoin',
-        'qcity',
-        'quasar',
-        'searchcoin',
-        'paxcoin',
-        'ventas',
-        'yangcoin'
-    ]
 }
 var COIN_CONFIG = {
     btc: {
         bwsurl: 'https://bws.bitchk.com/bws/api',
         insight: 'http://insight-btc.bitchk.com',
-        network: 'litvenet',
+        network: 'livenet',
         coin: 'btc',
         displayName: "BTC",
         enable: true,
@@ -33,44 +22,60 @@ var COIN_CONFIG = {
         enable: true,
         coinName: "Litecoin"
     },
-    qct: {
+    ven: {
         bwsurl: 'https://bws.bitchk.com/bws/api',
-        insight: 'https://insight-qct.bitchk.com',
-        coin: 'qct',
-        displayName: "QCT",
-        coinName: "QCity",
-        enable: false,
-    },
-    qac: {
-        bwsurl: 'https://bws.bitchk.com/bws/api',
-        insight: 'https://insight-qac.bitchk.com',
-        coin: 'qac',
-        displayName: "QAC",
-        coinName: "Quasar",
-        enable: false,
-    },
-    pax: {
-        bwsurl: 'https://bws.bitchk.com/bws/api',
-        insight: 'https://insight-pax.bitchk.com',
-        coin: 'pax',
-        displayName: "PAX",
-        coinName: "Paxcoin",
-        enable: false,
-    },
-    ssc: {
-        bwsurl: 'https://bws.bitchk.com/bws/api',
-        insight: 'https://insight-ssc.bitchk.com',
-        coin: 'ssc',
-        displayName: "SSC",
-        coinName: "SearchCoin",
-        enable: false,
+        insight: 'http://insight.ventasnu.com',
+        coin: 'ven',
+        displayName: "VEN",
+        network: "ventas",
+        coinName: "VENTAS",
+        enable: true,
     },
     yng: {
         bwsurl: 'https://bws.bitchk.com/bws/api',
         insight: 'https://insight-yng.bitchk.com',
         coin: 'yng',
         displayName: "YNG",
+        network: "yangcoin",
         coinName: "YangCoin",
-        enable: false,
+        enable: true,
+    },
+    qct: {
+        bwsurl: 'https://bws-qct.bitchk.com/bws/api',
+        insight: 'https://insight-qct.bitchk.com',
+        coin: 'qct',
+        displayName: "QCT",
+        coinName: "QCity",
+        network: "qctcoin",
+
+
+        enable: true,
+    },
+    qac: {
+        bwsurl: 'https://bws-qac.bitchk.com/bws/api',
+        insight: 'https://insight-qac.bitchk.com',
+        coin: 'qac',
+        displayName: "QAC",
+        coinName: "Quasar",
+        network: "quasar",
+        enable: true,
+    },
+    pax: {
+        bwsurl: 'https://bws-pax.bitchk.com/bws/api',
+        insight: 'https://insight-pax.bitchk.com',
+        coin: 'pax',
+        displayName: "PAX",
+        coinName: "Paxcoin",
+        network: "paxcoin",
+        enable: true,
+    },
+    ssc: {
+        bwsurl: 'https://bws-ssc.bitchk.com/bws/api',
+        insight: 'https://insight-ssc.bitchk.com',
+        coin: 'ssc',
+        displayName: "SSC",
+        coinName: "SearchCoin",
+        network: "searchcoin",
+        enable: true,
     }
 }

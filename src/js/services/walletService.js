@@ -927,12 +927,17 @@ angular.module('copayApp.services').factory('walletService', function($log, $tim
 
     // Approx utxo amount, from which the uxto is economically redeemable
     root.getMinFee = function(wallet, feeLevels, nbOutputs) {
-        var lowLevelRate = (lodash.find(feeLevels[wallet.network], {
-            level: 'normal',
-        }).feePerKb / 1000).toFixed(0);
+        try {
+            var lowLevelRate = (lodash.find(feeLevels[wallet.network], {
+                level: 'normal',
+            }).feePerKb / 1000).toFixed(0);
 
-        var size = root.getEstimatedTxSize(wallet, nbOutputs);
-        return size * lowLevelRate;
+            var size = root.getEstimatedTxSize(wallet, nbOutputs);
+            return size * lowLevelRate;
+        } catch (error) {
+            console.log("error getMinfee ", error);
+            throw error;
+        }
     };
 
 

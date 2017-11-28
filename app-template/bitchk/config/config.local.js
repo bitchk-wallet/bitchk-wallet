@@ -1,23 +1,12 @@
 var DEFAULT_CONFIG = {
     networkName: 'livenet',
-    coin: 'btc',
-    bwsurl: 'http://localhost:3232/bws/api',
-
-    networks: [
-        'livenet',
-        'litecoin',
-        'qcity',
-        'quasar',
-        'searchcoin',
-        'paxcoin',
-        'yangcoin'
-    ]
+    bwsurl: 'http://localhost:3232/bws/api'
 }
 var COIN_CONFIG = {
     btc: {
         bwsurl: 'http://localhost:3232/bws/api',
         insight: 'http://insight-btc.bitchk.com',
-        network: 'litvenet',
+        network: 'livenet',
         coin: 'btc',
         displayName: "BTC",
         enable: true,

@@ -1,4 +1,4 @@
-<label ng-if="DEFAULT_CONFIG.coin" class="item item-input item-select">
+<label ng-if="DEFAULT_CONFIG.coin" class="item item-input item-select ">
   <div class="input-label" translate>
     Coin
   </div>
@@ -16,18 +16,15 @@
 </label>
 <!-- no default coin -->
 <label ng-if="!DEFAULT_CONFIG.coin" class="item item-input ">
-  <div class="input-label" translate>
-    Coin
-  </div>
-  <i ng-if="formData.coin" class="icon big-icon-svg" ng-include="'views/includes/walletIcon.html'"></i>
-  {{formData.coinName}}
-  <input class="text-right " type="text"
-  placeholder="{{'Type Coin Unit (ex.BTC, LTC)'|translate}}"
-  ng-model="formData.coinUnit"
-  ng-required="true"
-  ng-focus="formFocus('coin-unit')"
-  ng-blur="formFocus(false)"
-  required>
-
+    <div class="input-label" translate>Coin</div>
+    <i ng-if="formData.coin" class="icon big-icon-svg" ng-include="'views/includes/walletIcon.html'"></i>
+    &nbsp;<div>{{formData.coinName}}</div>
+    <input maxlength="5"class="text-right " type="text"
+    placeholder="{{'Type Coin Unit (ex.BTC, LTC)'|translate}}"
+    ng-model="formData.coinUnit"
+    ng-required="true"
+    ng-focus="formFocus('coin-unit')"
+    ng-blur="formFocus(false)"
+    required>
 
 </label>

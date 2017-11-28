@@ -1,15 +1,13 @@
 var DEFAULT_CONFIG = {
     networkName: 'yangcoin',
-    coin: 'yng',
     bwsurl: 'https://bws-yng.bitchk.com/bws/api',
 
-    networks: ['livenet', 'ventas', 'litecoin', 'yangcoin']
 }
 var COIN_CONFIG = {
     btc: {
         bwsurl: 'https://bws.bitchk.com/bws/api',
         insight: 'http://insight-btc.bitchk.com',
-        network: 'litvenet',
+        network: 'livenet',
         coin: 'btc',
         displayName: "BTC",
         enable: true,
@@ -29,6 +27,7 @@ var COIN_CONFIG = {
         insight: 'http://insight.ventasnu.com',
         coin: 'ven',
         displayName: "VEN",
+        network: "ventas",
         coinName: "VENTAS",
         enable: true,
     },

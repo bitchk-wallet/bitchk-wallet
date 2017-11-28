@@ -72,7 +72,7 @@ angular.module('copayApp.services').factory('incomingData', function($log,
 
         data = sanitizeUri(data);
 
-
+        // console.log("sanitizeUri", data, appConfigService.name);
         // Bitcoin  URL
         // Bitcoin  URL
         if (bitcore.Address.isValid(data)) {
@@ -179,6 +179,29 @@ angular.module('copayApp.services').factory('incomingData', function($log,
                 });
                 $state.transitionTo('tabs.buyandsell.coinbase', {
                     code: code
+                });
+            });
+            return true;
+
+            // BitPayCard Authentication
+        } else if (data && data.indexOf(appConfigService.name + '://createwallet') === 0) {
+            var coin = getParameterByName('coin', data);
+            var walletName = getParameterByName('walletName', data);
+
+            $ionicHistory.nextViewOptions({
+                disableAnimate: true
+            });
+
+            $state.go('tabs.home', {}, {
+                'reload': true,
+                'notify': $state.current.name == 'tabs.home' ? false : true
+            }).then(function() {
+                $ionicHistory.nextViewOptions({
+                    disableAnimate: true
+                });
+                $state.transitionTo('tabs.add.create-personal', {
+                    coin: coin,
+                    walletName: walletName
                 });
             });
             return true;
