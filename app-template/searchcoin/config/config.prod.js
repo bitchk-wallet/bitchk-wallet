@@ -1,10 +1,8 @@
 var DEFAULT_CONFIG = {
     networkName: 'searchcoin',
     coin: 'ssc',
-    bwsurl: 'http://bws-ssc.bitchk.com/bws/api',
-
-    networks: ['searchcoin']
-}
+    bwsurl: 'http://bws-ssc.bitchk.com/bws/api'
+};
 var COIN_CONFIG = {
 
     ssc: {
@@ -16,4 +14,4 @@ var COIN_CONFIG = {
         network: "searchcoin",
         enable: true,
     }
-}
+};

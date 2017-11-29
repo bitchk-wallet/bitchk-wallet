@@ -1,11 +1,7 @@
 var DEFAULT_CONFIG = {
     networkName: 'paxcoin',
     coin: 'pax',
-    bwsurl: 'https://bws-pax.bitchk.com/bws/api',
-
-    networks: [
-        'paxcoin'
-    ]
+    bwsurl: 'https://bws-pax.bitchk.com/bws/api'
 }
 
 var COIN_CONFIG = {
