@@ -1,9 +1,7 @@
 var DEFAULT_CONFIG = {
     networkName: 'quasar',
     coin: 'qac',
-    bwsurl: 'http://bws-qac.bitchk.com/bws/api',
-
-    networks: ['quasar']
+    bwsurl: 'http://bws-qac.bitchk.com/bws/api'
 }
 var COIN_CONFIG = {
 

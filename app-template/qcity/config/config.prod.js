@@ -1,12 +1,7 @@
 var DEFAULT_CONFIG = {
     networkName: 'qctcoin',
     coin: 'qct',
-    bwsurl: 'https://bws-qct.bitchk.com/bws/api',
-
-    networks: [
-
-        'qctcoin'
-    ]
+    bwsurl: 'https://bws-qct.bitchk.com/bws/api'
 }
 var COIN_CONFIG = {
 
