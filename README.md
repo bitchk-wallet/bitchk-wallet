@@ -67,7 +67,7 @@ Follow the [Cordova Android Platform Guide](https://cordova.apache.org/docs/en/l
 When your developement enviroment is ready, run the `start:android` npm package script.
 
 ```sh
-npm run apply:copay
+npm run apply:bitchk
 npm run start:android
 ```
 
@@ -78,7 +78,7 @@ Follow the [Cordova iOS Platform Guide](https://cordova.apache.org/docs/en/lates
 When your developement enviroment is ready, run the `start:ios` npm package script.
 
 ```sh
-npm run apply:copay
+npm run apply:bitchk
 npm run start:ios
 ```
 
@@ -99,7 +99,7 @@ and then enable this one:
 - Run:
 ```sh
 npm run clean-all
-npm run apply:copay
+npm run apply:bitchk
 npm run start:windows
 ```
 - Then open the project file with VS inside cordova/platform/windows/
@@ -111,7 +111,7 @@ The desktop version of Copay currently uses NW.js, an app runtime based on Chrom
 When NW.js is installed, run the `start:desktop` npm package script.
 
 ```sh
-npm run apply:copay
+npm run apply:bitchk
 npm run start:desktop
 ```
 
@@ -125,7 +125,7 @@ The `final` commands build the production version of the app, and bundle it with
 
 ```sh
 npm run clean-all
-npm run apply:copay
+npm run apply:bitchk
 npm run final:android
 ```
 
@@ -133,7 +133,7 @@ npm run final:android
 
 ```sh
 npm run clean-all
-npm run apply:copay
+npm run apply:bitchk
 npm run final:ios
 ```
 
@@ -151,7 +151,7 @@ and then enable this one:
 - Run:
 ```sh
 npm run clean-all
-npm run apply:copay
+npm run apply:bitchk
 npm run final:windows
 ```
 - Then open the project file with VS inside cordova/platform/windows/
@@ -160,7 +160,7 @@ npm run final:windows
 
 ```sh
 npm run clean-all
-npm run apply:copay
+npm run apply:bitchk
 npm run final:desktop
 ```
 
@@ -169,7 +169,7 @@ npm run final:desktop
 > cd chrome-app/
 
 ```sh
-npm run apply:copay
+npm run apply:bitchk
 grunt
 make
 ```
@@ -183,9 +183,7 @@ On success, the Chrome extension will be located at: `browser-extensions/chrome/
 To enable external services, set the `COPAY_EXTERNAL_SERVICES_CONFIG_LOCATION` or `BITPAY_EXTERNAL_SERVICES_CONFIG_LOCATION` environment variable to the location of your configuration before running the `apply` task.
 
 ```sh
-COPAY_EXTERNAL_SERVICES_CONFIG_LOCATION="~/.copay/externalServices.json" npm run apply:copay
-# or
-BITPAY_EXTERNAL_SERVICES_CONFIG_LOCATION="~/.bitpay/externalServices.json" npm run apply:bitpay
+COPAY_EXTERNAL_SERVICES_CONFIG_LOCATION="~/.copay/externalServices.json" npm run apply:bitchk
 ```
 
 ## About Copay
