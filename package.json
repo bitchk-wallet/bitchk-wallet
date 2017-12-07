@@ -8,6 +8,7 @@
         "postinstall": "npm run apply:bitchk && echo && echo \"Repo configured for standard Copay distribution. To switch to the BitPay distribution, run 'npm run apply:bitpay'.\" && echo",
         "start": "echo && echo \"Choose a distribution by running 'npm run apply:copay' or 'npm run apply:bitpay'.\" && echo",
         "apply:target": "npm i fs-extra@0.30 && cd app-template && node apply.js $npm_config_appname && cd .. && npm i",
+        "apply:target2": "npm i fs-extra@0.30 && cd app-template && node apply2.js $npm_config_appname && cd .. && npm i",
         "unstage-package": "git reset package.json",
         "clean-all": "git clean -dfx"
     },
