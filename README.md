@@ -44,7 +44,7 @@ cd copay
 Ensure you have [Node](https://nodejs.org/) installed, then install and start Copay:
 
 ```sh
-npm run apply:copay
+npm run apply:bitchk
 npm start
 ```
 
