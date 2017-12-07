@@ -110,11 +110,6 @@
         "log:android": "adb logcat | grep chromium",
         "sign:android": "rm -f *.apk;rm -f platforms/android/build/outputs/apk/android-release-signed-aligned.apk; jarsigner -storepass $npm_config_pass -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore ../appkeys/bitchk.keystore -signedjar platforms/android/build/outputs/apk/android-release-signed.apk  platforms/android/build/outputs/apk/android-release-unsigned.apk bitchk.com && zipalign -v 4 platforms/android/build/outputs/apk/android-release-signed.apk platforms/android/build/outputs/apk/android-release-signed-aligned.apk; cp platforms/android/build/outputs/apk/android-release-signed-aligned.apk ./*PACKAGENAME*-release-signed-aligned.apk ",
         "apply:bitchk": "npm i fs-extra && cd app-template && node apply.js bitchk && npm i && cordova prepare",
-        "apply:yangcoin": "npm i fs-extra@0.30 && cd app-template && node apply.js yangcoin && cd .. && npm i",
-        "apply:qcity": "npm i fs-extra@0.30 && cd app-template && node apply.js qcity && cd .. && npm i",
-        "apply:quasar": "npm i fs-extra@0.30 && cd app-template && node apply.js quasar && cd .. && npm i",
-        "apply:paxcoin": "npm i fs-extra@0.30 && cd app-template && node apply.js paxcoin && cd .. && npm i",
-        "apply:searchcoin": "npm i fs-extra@0.30 && cd app-template && node apply.js searchcoin && cd .. && npm i",
         "apply:target": "npm i fs-extra@0.30 && cd app-template && node apply.js $npm_config_appname && cd .. && npm i",
 
         "apply": "npm i fs-extra@0.30 && cd app-template && node apply.js *PACKAGENAME* && cd .. && npm i",
