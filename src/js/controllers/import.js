@@ -18,7 +18,8 @@ angular.module('copayApp.controllers').controller('importController',
             $scope.formData.bwsurl = defaults.bws.url;
             $scope.formData.derivationPath = derivationPathHelper.default;
             $scope.formData.account = 1;
-            //$scope.formData.coin = $scope.DEFAULT_CONFIG.coin;
+            if( $scope.DEFAULT_CONFIG.coin)
+                $scope.formData.coin = $scope.DEFAULT_CONFIG.coin;
             $scope.importErr = false;
             $scope.isCopay = appConfigService.name == 'copay';
             $scope.fromHardwareWallet = {
@@ -424,7 +425,8 @@ angular.module('copayApp.controllers').controller('importController',
         if (!$scope.DEFAULT_CONFIG.coin) {
             $scope.$watch('formData.coinUnit', function(newValue, oldValue) {
                 if (newValue == undefined) {
-                    $scope.formData.coin = null;
+                    if($scope.formData&&$scope.formData.coin)
+                        $scope.formData.coin = null;
                     return;
                 }
 
