@@ -90,8 +90,8 @@ msgid "Add Account"
 msgstr "アカウントを追加"
 
 #: src/js/services/bitpayAccountService.js:69
-msgid "Add BitPay Account?"
-msgstr "BitPay アカウントを追加しますか？"
+msgid "Add Bitchk Account?"
+msgstr "Bitchk アカウントを追加しますか？"
 
 #: www/views/addressbook.add.html:4
 #: www/views/addressbook.html:22
@@ -271,13 +271,13 @@ msgid "Are you sure you want to skip it?"
 msgstr "本当にバックアップの手順を飛ばしても良いですか？"
 
 #: www/views/modals/bitpay-card-confirmation.html:4
-msgid "Are you sure you would like to log out of your BitPay Card account?"
-msgstr "BitPayカードアカウントからログアウトしてもよろしいですか?"
+msgid "Are you sure you would like to log out of your Bitchk Card account?"
+msgstr "Bitchkカードアカウントからログアウトしてもよろしいですか?"
 
 #: src/js/controllers/preferencesBitpayCard.js:7
 #: src/js/controllers/preferencesBitpayServices.js:20
-msgid "Are you sure you would like to remove your BitPay Card ({{lastFourDigits}}) from this device?"
-msgstr "この端末から BitPay カード ({{lastFourDigits}}) を本当に削除してもよろしいですか？"
+msgid "Are you sure you would like to remove your Bitchk Card ({{lastFourDigits}}) from this device?"
+msgstr "この端末から Bitchk カード ({{lastFourDigits}}) を本当に削除してもよろしいですか？"
 
 #: www/views/includes/walletInfo.html:10
 msgid "Auditable"
@@ -350,8 +350,8 @@ msgid "Be sure to store your recovery phrase in a secure place. If this app is d
 msgstr "書き留めた復元フレーズは金庫など、安全な場所にて保管して下さい。このアプリが削除されたら、復元フレーズが必須になってきます。"
 
 #: www/views/preferencesBitpayServices.html:9
-msgid "BitPay Visa&reg; Cards"
-msgstr "BitPayのVISA&reg; カード"
+msgid "Bitchk Visa&reg; Cards"
+msgstr "BitchkのVISA&reg; カード"
 
 #: www/views/addressbook.add.html:38
 #: www/views/includes/incomingDataMenu.html:29
@@ -592,8 +592,8 @@ msgid "Confirming"
 msgstr "承認中"
 
 #: www/views/bitpayCardIntro.html:37
-msgid "Connect my BitPay Card"
-msgstr "BitPay カードを接続"
+msgid "Connect my Bitchk Card"
+msgstr "Bitchk カードを接続"
 
 #: src/js/services/onGoingProcess.js:13
 msgid "Connecting to Coinbase..."
@@ -989,8 +989,8 @@ msgid "Enter Spending Password"
 msgstr "送金時のパスワード入力して下さい。"
 
 #: src/js/services/bitpayAccountService.js:110
-msgid "Enter Two Factor for your BitPay account"
-msgstr "BitPay アカウントの2段階認証コードを入力して下さい"
+msgid "Enter Two Factor for your Bitchk account"
+msgstr "Bitchk アカウントの2段階認証コードを入力して下さい"
 
 #: www/views/amount.html:4
 msgid "Enter amount"
@@ -1125,7 +1125,7 @@ msgid "Error in Payment Protocol"
 msgstr "支払い検証のエラー"
 
 #: src/js/controllers/bitpayCardIntro.js:14
-msgid "Error pairing BitPay Account"
+msgid "Error pairing Bitchk Account"
 msgstr "Bitpayアカウントを接続中にエラー"
 
 #: src/js/controllers/paperWallet.js:41
@@ -1218,8 +1218,8 @@ msgid "Feedback could not be submitted. Please try again later."
 msgstr "フォームを送信する事ができませんでした。時間をおいて再試行ください。"
 
 #: src/js/services/onGoingProcess.js:42
-msgid "Fetching BitPay Account..."
-msgstr "BitPay アカウントを取得..."
+msgid "Fetching Bitchk Account..."
+msgstr "Bitchk アカウントを取得..."
 
 #: src/js/services/onGoingProcess.js:21
 msgid "Fetching payment information"
@@ -1260,8 +1260,8 @@ msgid "From"
 msgstr "送信者"
 
 #: src/js/controllers/bitpayCardIntro.js:71
-msgid "From BitPay account"
-msgstr " BitPayアカウントから"
+msgid "From Bitchk account"
+msgstr " Bitchkアカウントから"
 
 #: www/views/tab-import-phrase.html:57
 msgid "From Hardware Wallet"
@@ -1495,8 +1495,8 @@ msgid "If enabled, wallets will also try to spend unconfirmed funds. This option
 msgstr "有効にした場合、ウォレットは未承認ビットコインも送金時の候補に含めます。これを有効にした場合、承認に時間がかかることがあります。"
 
 #: src/js/controllers/onboarding/backupRequest.js:18
-msgid "If this device is replaced or this app is deleted, neither you nor BitPay can recover your funds without a backup."
-msgstr "この端末の機種変更をしたり、アプリを削除したりした場合、端末のバックアップを取っていてもビットコインは復元されません。BitPayは復元フレーズを知らないため、お金を失ったことになります。なので、絶対に復元フレーズを書き留めて安全な場所に保管して下さい。"
+msgid "If this device is replaced or this app is deleted, neither you nor Bitchk can recover your funds without a backup."
+msgstr "この端末の機種変更をしたり、アプリを削除したりした場合、端末のバックアップを取っていてもビットコインは復元されません。Bitchkは復元フレーズを知らないため、お金を失ったことになります。なので、絶対に復元フレーズを書き留めて安全な場所に保管して下さい。"
 
 #: www/views/feedback/complete.html:23
 msgid "If you have additional feedback, please let us know by tapping the \"Send feedback\" option in the Settings tab."
@@ -1915,8 +1915,8 @@ msgid "Not enough funds for fee"
 msgstr "手数料含めたら残高が不足しています。"
 
 #: www/views/onboarding/tour.html:50
-msgid "Not even BitPay can access it."
-msgstr "BitPayは管理できない。"
+msgid "Not even Bitchk can access it."
+msgstr "Bitchkは管理できない。"
 
 #: src/js/controllers/paperWallet.js:47
 msgid "Not funds found"
@@ -2044,8 +2044,8 @@ msgid "Open website"
 msgstr "サイトを開く"
 
 #: www/views/bitpayCardIntro.html:34
-msgid "Order the BitPay Card"
-msgstr "BitPay カードを申し込み"
+msgid "Order the Bitchk Card"
+msgstr "Bitchk カードを申し込み"
 
 #: www/views/join.html:105
 #: www/views/join.html:96
@@ -2379,16 +2379,16 @@ msgid "Remove"
 msgstr "削除"
 
 #: src/js/controllers/preferencesBitpayServices.js:7
-msgid "Remove BitPay Account?"
-msgstr "BitPay アカウントの接続を解除しますか？"
+msgid "Remove Bitchk Account?"
+msgstr "Bitchk アカウントの接続を解除しますか？"
 
 #: src/js/controllers/preferencesBitpayServices.js:19
-msgid "Remove BitPay Card?"
-msgstr "BitPay カードを削除しますか？"
+msgid "Remove Bitchk Card?"
+msgstr "Bitchk カードを削除しますか？"
 
 #: src/js/controllers/preferencesBitpayServices.js:8
-msgid "Removing your BitPay account will remove all associated BitPay account data from this device. Are you sure you would like to remove your BitPay Account ({{email}}) from this device?"
-msgstr "BitPay アカウントを削除すると、このデバイスからすべての関連付けられている BitPay のアカウントデータが削除されます。本当にこのデバイスから BitPay アカウント ({{email}}) を削除してもよろしいですか。"
+msgid "Removing your Bitchk account will remove all associated Bitchk account data from this device. Are you sure you would like to remove your Bitchk Account ({{email}}) from this device?"
+msgstr "Bitchk アカウントを削除すると、このデバイスからすべての関連付けられている Bitchk のアカウントデータが削除されます。本当にこのデバイスから Bitchk アカウント ({{email}}) を削除してもよろしいですか。"
 
 #: www/views/join.html:116
 #: www/views/join.html:124
@@ -2869,8 +2869,8 @@ msgid "The maximum number of consecutive unused addresses (20) has been reached.
 msgstr "連続未使用アドレスの上限(20)に達しました。どれかにアドレスにビットコインが少量でも入れば再び受取画面にて新しいアドレスを生成することができるようになります。"
 
 #: src/js/controllers/onboarding/terms.js:21
-msgid "The official English Terms of Service are available on the BitPay website."
-msgstr "英語公式の規約は BitPay のウェブサイトにてご覧いただけます。"
+msgid "The official English Terms of Service are available on the Bitchk website."
+msgstr "英語公式の規約は Bitchk のウェブサイトにてご覧いただけます。"
 
 #: www/views/tab-import-phrase.html:4
 msgid "The password of the recovery phrase (if set)"
@@ -2990,8 +2990,8 @@ msgid "To get started, you'll need to create a bitcoin wallet and get some bitco
 msgstr "はじめに、ビットコインウォレットを作成し、ビットコインを入手する必要があります。"
 
 #: src/js/services/bitpayAccountService.js:73
-msgid "To {{reason}} you must first add your BitPay account - {{email}}"
-msgstr "{{reason}}：その前にBitPayアカウントを追加する必要があります - {{email}}"
+msgid "To {{reason}} you must first add your Bitchk account - {{email}}"
+msgstr "{{reason}}：その前にBitchkアカウントを追加する必要があります - {{email}}"
 
 #: src/js/services/onGoingProcess.js:48
 msgid "Top up in progress..."
@@ -3468,16 +3468,16 @@ msgid "You should not set a fee higher than {{maxFeeRecommended}} satoshis/byte.
 msgstr "{{maxFeeRecommended}} satoshis/byte より高い手数料を設定しない方が良いです。"
 
 #: www/views/modals/bitpay-card-confirmation.html:5
-msgid "You will need to log back for fill in your BitPay Card."
-msgstr "BitPayカードに入金するためにログインする必要があります。"
+msgid "You will need to log back for fill in your Bitchk Card."
+msgstr "Bitchkカードに入金するためにログインする必要があります。"
 
 #: www/views/preferencesNotifications.html:34
 msgid "You'll receive email notifications about payments sent and received from your wallets."
 msgstr "メールアドレスにウォレットへの入金や出金に関する通知が送られます。"
 
 #: www/views/bitpayCard.html:50
-msgid "Your BitPay Card is ready. Add funds to your card to start using it at stores and ATMs worldwide."
-msgstr "BitPayカードの準備が整いました。入金して全世界のお店やATMでご利用下さい。"
+msgid "Your Bitchk Card is ready. Add funds to your card to start using it at stores and ATMs worldwide."
+msgstr "Bitchkカードの準備が整いました。入金して全世界のお店やATMでご利用下さい。"
 
 #: www/views/mercadoLibre.html:57
 #: www/views/mercadoLibreCards.html:6
@@ -3544,8 +3544,8 @@ msgid "[Scanning Funds]"
 msgstr ""
 
 #: src/js/controllers/bitpayCardIntro.js:11
-msgid "add your BitPay Visa card(s)"
-msgstr "BitPay VISAカードを追加します"
+msgid "add your Bitchk Visa card(s)"
+msgstr "Bitchk VISAカードを追加します"
 
 #: www/views/includes/available-balance.html:8
 msgid "locked by pending payments"
@@ -3572,8 +3572,8 @@ msgid "{{amountStr}} for Mercado Livre Brazil Gift Card"
 msgstr "{{amountStr}} を Mercado Livre Brazil ギフトカードに"
 
 #: www/views/preferencesBwsUrl.html:21
-msgid "{{appName}} depends on Bitcore Wallet Service (BWS) for blockchain information, networking and Copayer synchronization. The default configuration points to https://bws.bitchk.com (BitPay's public BWS instance)."
-msgstr "{{appName}}はブロックチェーンの情報を取得したり参加者を同期させたりするためにBitcore Wallet Service (BWS)に依存します。初期値としてBitPay社が提供する https://bws.bitchk.com (BitPay公式のBWSサーバー)を設定していますが、独自で運用してウォレットをそちらに接続しても構いません。"
+msgid "{{appName}} depends on Bitcore Wallet Service (BWS) for blockchain information, networking and Copayer synchronization. The default configuration points to https://bws.bitchk.com (Bitchk's public BWS instance)."
+msgstr "{{appName}}はブロックチェーンの情報を取得したり参加者を同期させたりするためにBitcore Wallet Service (BWS)に依存します。初期値としてBitchk社が提供する https://bws.bitchk.com (Bitchk公式のBWSサーバー)を設定していますが、独自で運用してウォレットをそちらに接続しても構いません。"
 
 #: src/js/controllers/confirm.js:387
 msgid "{{fee}} will be deducted for bitcoin networking fees."

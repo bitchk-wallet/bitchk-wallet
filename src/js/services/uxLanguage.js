@@ -11,7 +11,15 @@ angular.module('copayApp.services')
             }, {
                 name: 'English',
                 isoCode: 'en',
-            }
+            }, {
+                  name: '日本語',
+                  isoCode: 'ja',
+                  useIdeograms: true,
+                }, {
+                  name: '中文（简体）',
+                  isoCode: 'zh',
+                  useIdeograms: true,
+                },
             // {
             //   name: 'Español',
             //   isoCode: 'es',

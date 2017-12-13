@@ -90,8 +90,8 @@ msgid "Add Account"
 msgstr "添加帐户"
 
 #: src/js/services/bitpayAccountService.js:69
-msgid "Add BitPay Account?"
-msgstr "添加 BitPay 帐户吗？"
+msgid "Add Bitchk Account?"
+msgstr "添加 Bitchk 帐户吗？"
 
 #: www/views/addressbook.add.html:4
 #: www/views/addressbook.html:22
@@ -136,7 +136,7 @@ msgstr "添加资金"
 
 #: src/js/services/bitpayAccountService.js:78
 msgid "Add this {{appName}} account ({{email}})?"
-msgstr "确定添加此BitPay账户:{{email}} 吗？"
+msgstr "确定添加此Bitchk账户:{{email}} 吗？"
 
 #: www/views/add.html:3
 msgid "Add wallet"
@@ -269,13 +269,13 @@ msgid "Are you sure you want to skip it?"
 msgstr "你确定你想跳过它？"
 
 #: www/views/modals/bitpay-card-confirmation.html:4
-msgid "Are you sure you would like to log out of your BitPay Card account?"
-msgstr "你确定你要登出你的BitPay Card账户？"
+msgid "Are you sure you would like to log out of your Bitchk Card account?"
+msgstr "你确定你要登出你的Bitchk Card账户？"
 
 #: src/js/controllers/preferencesBitpayCard.js:7
 #: src/js/controllers/preferencesBitpayServices.js:20
-msgid "Are you sure you would like to remove your BitPay Card ({{lastFourDigits}}) from this device?"
-msgstr "你确定你想要从这个设备中删除您的 BitPay 卡 ({{lastFourDigits}})吗？"
+msgid "Are you sure you would like to remove your Bitchk Card ({{lastFourDigits}}) from this device?"
+msgstr "你确定你想要从这个设备中删除您的 Bitchk 卡 ({{lastFourDigits}})吗？"
 
 #: www/views/includes/walletInfo.html:10
 msgid "Auditable"
@@ -348,8 +348,8 @@ msgid "Be sure to store your recovery phrase in a secure place. If this app is d
 msgstr "请务必将您的恢复短语存储在一个安全的地方。如果这个程序被删除，不能没有它恢复你的钱。"
 
 #: www/views/preferencesBitpayServices.html:9
-msgid "BitPay Visa&reg; Cards"
-msgstr "BitPay Visa&reg; 牌"
+msgid "Bitchk Visa&reg; Cards"
+msgstr "Bitchk Visa&reg; 牌"
 
 #: www/views/addressbook.add.html:38
 #: www/views/includes/incomingDataMenu.html:29
@@ -590,8 +590,8 @@ msgid "Confirming"
 msgstr "确认"
 
 #: www/views/bitpayCardIntro.html:37
-msgid "Connect my BitPay Card"
-msgstr "我 BitPay 卡连接"
+msgid "Connect my Bitchk Card"
+msgstr "我 Bitchk 卡连接"
 
 #: src/js/services/onGoingProcess.js:13
 msgid "Connecting to Coinbase..."
@@ -987,8 +987,8 @@ msgid "Enter Spending Password"
 msgstr "输入支出密码"
 
 #: src/js/services/bitpayAccountService.js:110
-msgid "Enter Two Factor for your BitPay account"
-msgstr "为您的 BitPay 帐户输入两个因素"
+msgid "Enter Two Factor for your Bitchk account"
+msgstr "为您的 Bitchk 帐户输入两个因素"
 
 #: www/views/amount.html:4
 msgid "Enter amount"
@@ -1123,8 +1123,8 @@ msgid "Error in Payment Protocol"
 msgstr "付款协议中的错误"
 
 #: src/js/controllers/bitpayCardIntro.js:14
-msgid "Error pairing BitPay Account"
-msgstr "错误配对 BitPay 帐户"
+msgid "Error pairing Bitchk Account"
+msgstr "错误配对 Bitchk 帐户"
 
 #: src/js/controllers/paperWallet.js:41
 msgid "Error scanning funds:"
@@ -1216,8 +1216,8 @@ msgid "Feedback could not be submitted. Please try again later."
 msgstr "无法提交反馈。请稍后再试。"
 
 #: src/js/services/onGoingProcess.js:42
-msgid "Fetching BitPay Account..."
-msgstr "正在获取 BitPay 帐户..."
+msgid "Fetching Bitchk Account..."
+msgstr "正在获取 Bitchk 帐户..."
 
 #: src/js/services/onGoingProcess.js:21
 msgid "Fetching payment information"
@@ -1258,8 +1258,8 @@ msgid "From"
 msgstr "来自"
 
 #: src/js/controllers/bitpayCardIntro.js:71
-msgid "From BitPay account"
-msgstr "从 BitPay 帐户"
+msgid "From Bitchk account"
+msgstr "从 Bitchk 帐户"
 
 #: www/views/tab-import-phrase.html:57
 msgid "From Hardware Wallet"
@@ -1493,8 +1493,8 @@ msgid "If enabled, wallets will also try to spend unconfirmed funds. This option
 msgstr "如果启用了，钱包也尝试使用未经证实的资金。此选项可能会导致事务延迟。"
 
 #: src/js/controllers/onboarding/backupRequest.js:18
-msgid "If this device is replaced or this app is deleted, neither you nor BitPay can recover your funds without a backup."
-msgstr "如果此设备被替换或删除此应用程序，你和 BitPay 都不可以恢复你的资金，也没有备份。"
+msgid "If this device is replaced or this app is deleted, neither you nor Bitchk can recover your funds without a backup."
+msgstr "如果此设备被替换或删除此应用程序，你和 Bitchk 都不可以恢复你的资金，也没有备份。"
 
 #: www/views/feedback/complete.html:23
 msgid "If you have additional feedback, please let us know by tapping the \"Send feedback\" option in the Settings tab."
@@ -1913,8 +1913,8 @@ msgid "Not enough funds for fee"
 msgstr "费用的资金不足"
 
 #: www/views/onboarding/tour.html:50
-msgid "Not even BitPay can access it."
-msgstr "甚至没有 BitPay 可以访问它。"
+msgid "Not even Bitchk can access it."
+msgstr "甚至没有 Bitchk 可以访问它。"
 
 #: src/js/controllers/paperWallet.js:47
 msgid "Not funds found"
@@ -2042,8 +2042,8 @@ msgid "Open website"
 msgstr "打开网站"
 
 #: www/views/bitpayCardIntro.html:34
-msgid "Order the BitPay Card"
-msgstr "订单 BitPay 卡"
+msgid "Order the Bitchk Card"
+msgstr "订单 Bitchk 卡"
 
 #: www/views/join.html:105
 #: www/views/join.html:96
@@ -2377,16 +2377,16 @@ msgid "Remove"
 msgstr "移除"
 
 #: src/js/controllers/preferencesBitpayServices.js:7
-msgid "Remove BitPay Account?"
-msgstr "删除 BitPay 帐户吗？"
+msgid "Remove Bitchk Account?"
+msgstr "删除 Bitchk 帐户吗？"
 
 #: src/js/controllers/preferencesBitpayServices.js:19
-msgid "Remove BitPay Card?"
-msgstr "删除 BitPay 卡吗？"
+msgid "Remove Bitchk Card?"
+msgstr "删除 Bitchk 卡吗？"
 
 #: src/js/controllers/preferencesBitpayServices.js:8
-msgid "Removing your BitPay account will remove all associated BitPay account data from this device. Are you sure you would like to remove your BitPay Account ({{email}}) from this device?"
-msgstr "从该设备删除您的 BitPay 帐户将删除所有关联的 BitPay 帐户数据。你确定你想要从这个设备中删除您的 BitPay 帐户:({{email}})？"
+msgid "Removing your Bitchk account will remove all associated Bitchk account data from this device. Are you sure you would like to remove your Bitchk Account ({{email}}) from this device?"
+msgstr "从该设备删除您的 Bitchk 帐户将删除所有关联的 Bitchk 帐户数据。你确定你想要从这个设备中删除您的 Bitchk 帐户:({{email}})？"
 
 #: www/views/join.html:116
 #: www/views/join.html:124
@@ -2865,8 +2865,8 @@ msgid "The maximum number of consecutive unused addresses (20) has been reached.
 msgstr "已连续未使用的地址 (20) 的最大数目。当您未使用的地址之一收到付款时，将生成一个新的地址，和您接收选项卡所示。"
 
 #: src/js/controllers/onboarding/terms.js:21
-msgid "The official English Terms of Service are available on the BitPay website."
-msgstr "官方的英语术语服务是可在 BitPay 网站上。"
+msgid "The official English Terms of Service are available on the Bitchk website."
+msgstr "官方的英语术语服务是可在 Bitchk 网站上。"
 
 #: www/views/tab-import-phrase.html:4
 msgid "The password of the recovery phrase (if set)"
@@ -2984,8 +2984,8 @@ msgid "To get started, you'll need to create a bitcoin wallet and get some bitco
 msgstr "若要开始，您将需要创建一个比特币的钱包，并获得一些比特币。"
 
 #: src/js/services/bitpayAccountService.js:73
-msgid "To {{reason}} you must first add your BitPay account - {{email}}"
-msgstr "到 {{reason}}，您必须首先添加您的 BitPay 帐户-{{email}}"
+msgid "To {{reason}} you must first add your Bitchk account - {{email}}"
+msgstr "到 {{reason}}，您必须首先添加您的 Bitchk 帐户-{{email}}"
 
 #: src/js/services/onGoingProcess.js:48
 msgid "Top up in progress..."
@@ -3462,16 +3462,16 @@ msgid "You should not set a fee higher than {{maxFeeRecommended}} satoshis/byte.
 msgstr "你不应设置高于 {{maxFeeRecommended}} satoshis/字节 的交易手续费。"
 
 #: www/views/modals/bitpay-card-confirmation.html:5
-msgid "You will need to log back for fill in your BitPay Card."
-msgstr "您将需要登录回来为你 BitPay 卡填写。"
+msgid "You will need to log back for fill in your Bitchk Card."
+msgstr "您将需要登录回来为你 Bitchk 卡填写。"
 
 #: www/views/preferencesNotifications.html:34
 msgid "You'll receive email notifications about payments sent and received from your wallets."
 msgstr "在您的钱包进行付款操作时发送通知。"
 
 #: www/views/bitpayCard.html:50
-msgid "Your BitPay Card is ready. Add funds to your card to start using it at stores and ATMs worldwide."
-msgstr "您的 BitPay 卡是准备好了。添加到您的卡开始使用它在商店和自动取款机全球基金。"
+msgid "Your Bitchk Card is ready. Add funds to your card to start using it at stores and ATMs worldwide."
+msgstr "您的 Bitchk 卡是准备好了。添加到您的卡开始使用它在商店和自动取款机全球基金。"
 
 #: www/views/mercadoLibre.html:57
 #: www/views/mercadoLibreCards.html:6
@@ -3538,8 +3538,8 @@ msgid "[Scanning Funds]"
 msgstr ""
 
 #: src/js/controllers/bitpayCardIntro.js:11
-msgid "add your BitPay Visa card(s)"
-msgstr "添加您的 BitPay 签证卡"
+msgid "add your Bitchk Visa card(s)"
+msgstr "添加您的 Bitchk 签证卡"
 
 #: www/views/includes/available-balance.html:8
 msgid "locked by pending payments"
@@ -3566,8 +3566,8 @@ msgid "{{amountStr}} for Mercado Livre Brazil Gift Card"
 msgstr "梅尔卡多里弗巴西礼品卡 {{amountStr}}"
 
 #: www/views/preferencesBwsUrl.html:21
-msgid "{{appName}} depends on Bitcore Wallet Service (BWS) for blockchain information, networking and Copayer synchronization. The default configuration points to https://bws.bitchk.com (BitPay's public BWS instance)."
-msgstr "{{appName}} 中的区块链信息依赖于 Bitcore Wallet Service (BWS)、网络和 Copayer synchronization。默认配置指向 https://bws.bitchk.com (BitPay 的公共 BWS 实例)。"
+msgid "{{appName}} depends on Bitcore Wallet Service (BWS) for blockchain information, networking and Copayer synchronization. The default configuration points to https://bws.bitchk.com (Bitchk's public BWS instance)."
+msgstr "{{appName}} 中的区块链信息依赖于 Bitcore Wallet Service (BWS)、网络和 Copayer synchronization。默认配置指向 https://bws.bitchk.com (Bitchk 的公共 BWS 实例)。"
 
 #: src/js/controllers/confirm.js:387
 msgid "{{fee}} will be deducted for bitcoin networking fees."

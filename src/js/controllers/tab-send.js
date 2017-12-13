@@ -98,7 +98,7 @@ angular.module('copayApp.controllers').controller('tabSendController', function(
         // }
         // return 'btc';
     };
-
+ 
     var updateContactsList = function(cb) {
         addressbookService.list(function(err, ab) {
             if (err) $log.error(err);
