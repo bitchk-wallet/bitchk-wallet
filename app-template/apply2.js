@@ -10,7 +10,7 @@ var templates = {
     'ios.html': 'www/',
     'and.html': 'www/',
     'boot.html': 'www/',
-    'config-template.xml': '/',
+    'config-template.ext.xml': '/',
     'ionic.config.json': '/',
     '.desktop': 'webkitbuilds/',
     'setup-win.iss': 'webkitbuilds/',
@@ -61,7 +61,7 @@ Object.keys(templates).forEach(function(k) {
         process.exit(1);
     }
 
-    if (k === 'config-template.xml') {
+    if (k === 'config-template.ext.xml') {
         k = 'config.xml';
     } else if (k === 'package-template.json') {
         k = 'package.json';
