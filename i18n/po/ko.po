@@ -266,7 +266,7 @@ msgstr "정말로 이거래를 제거하시겠습니까?"
 
 #: src/js/controllers/onboarding/backupRequest.js:23
 msgid "Are you sure you want to skip it?"
-msgstr "정말로 건너띄시겠습니다."
+msgstr "정말로 건너뛰시겠습니다."
 
 #: www/views/modals/bitpay-card-confirmation.html:4
 msgid "Are you sure you would like to log out of your Bitchk Card account?"
@@ -2699,7 +2699,7 @@ msgstr "단일 주소 지갑"
 #: www/views/onboarding/collectEmail.html:40
 #: www/views/onboarding/tour.html:11
 msgid "Skip"
-msgstr "건너띄기"
+msgstr "건너뛰기"
 
 #: src/js/controllers/confirm.js:350
 #: src/js/controllers/modals/txpDetails.js:47
@@ -2966,7 +2966,7 @@ msgstr "이 거래는 확인하는 데 오랜 시간이 걸리거나 발신자�
 #: www/views/walletDetails.html:109
 #: www/views/walletDetails.html:29
 msgid "This wallet is not registered at the given Bitcore Wallet Service (BWS). You can recreate it from the local information."
-msgstr "이 지갑은 저희의 Bitcore Wallet Service (BWS)에 등록되어 있지 않습니다. 개인의 정로로 다시 생성할수 있습니다."
+msgstr "이 지갑은 저희의 Bitcore Wallet Service (BWS)에 등록되어 있지 않습니다. 로걸정보로 다시 생성할수 있습니다."
 
 #: www/views/modals/txp-details.html:138
 #: www/views/tx-details.html:123
@@ -3430,7 +3430,7 @@ msgstr "예"
 
 #: src/js/controllers/onboarding/backupRequest.js:25
 msgid "Yes, skip"
-msgstr "예, 건너띄기"
+msgstr "예, 건너뛰기"
 
 #: src/js/controllers/onboarding/backupRequest.js:24
 msgid "You can create a backup later from your wallet settings."
