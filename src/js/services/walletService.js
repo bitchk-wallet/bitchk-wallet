@@ -1252,6 +1252,9 @@ angular.module('copayApp.services').factory('walletService', function($log, $tim
         if (network && network.uri) {
             return network.uri;
         }
+        if (network && network.url) {
+            return network.url;
+        }
         if (wallet.coin == 'bch') return 'bitcoincash';
         else if (wallet.coin == 'btc') return 'bitcoin';
         else if (network) {
