@@ -2966,7 +2966,7 @@ msgstr "이 거래는 확인하는 데 오랜 시간이 걸리거나 발신자�
 #: www/views/walletDetails.html:109
 #: www/views/walletDetails.html:29
 msgid "This wallet is not registered at the given Bitcore Wallet Service (BWS). You can recreate it from the local information."
-msgstr "이 지갑은 저희의 Bitcore Wallet Service (BWS)에 등록되어 있지 않습니다. 로걸정보로 다시 생성할수 있습니다."
+msgstr "이 지갑은 저희의 Bitcore Wallet Service (BWS)에 등록되어 있지 않습니다. 로컬정보로 다시 생성할수 있습니다."
 
 #: www/views/modals/txp-details.html:138
 #: www/views/tx-details.html:123
