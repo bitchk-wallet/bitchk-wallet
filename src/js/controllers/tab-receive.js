@@ -117,12 +117,20 @@ angular.module('copayApp.controllers').controller('tabReceiveController', functi
     });
 
     var checkSelectedWallet = function(wallet, wallets) {
-        if (!wallet) return wallets[0];
+        if (!wallet || wallet.needsBackup) return getNeedsBackupWallet(wallets);
         var w = lodash.find(wallets, function(w) {
             return w.id == wallet.id;
         });
-        if (!w) return wallets[0];
+        if (!w || w.needsBackup) return getNeedsBackupWallet(wallets);
         return wallet;
+    }
+
+    var getNeedsBackupWallet = function (wallets) {
+        var wallet = lodash.find(wallets, function (o) {
+            return o.needsBackup === false;
+        });
+
+        return wallet || wallets[0];
     }
 
     var setProtocolHandler = function() {
