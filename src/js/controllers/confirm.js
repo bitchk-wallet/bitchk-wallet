@@ -33,6 +33,7 @@ angular.module('copayApp.controllers').controller('confirmController', function(
 
 
     $scope.showWalletSelector = function() {
+        console.log($scope.walletSelector);
         $scope.walletSelector = true;
         refresh();
     };

@@ -160,6 +160,16 @@ angular.module('copayApp.controllers').controller('walletDetailsController', fun
         });
     };
 
+    $scope.close = function() {
+        $scope.BackupNeededModal.hide();
+        $scope.BackupNeededModal.remove();
+    };
+
+    $scope.moveToHome = function () {
+        $scope.close();
+        $state.go('tabs.home');
+    };
+
     var updateTxHistory = function(cb) {
         if (!cb) cb = function() {};
 
@@ -365,6 +375,17 @@ angular.module('copayApp.controllers').controller('walletDetailsController', fun
         $scope.requiresMultipleSignatures = $scope.wallet.credentials.m > 1;
 
         $scope.updatingTxHistory = true;
+
+        if ($scope.wallet.needsBackup) {
+            $ionicModal.fromTemplateUrl('views/includes/backupNeededPopup.html', {
+                scope: $scope,
+                backdropClickToClose: false,
+                hardwareBackButtonClose: false
+            }).then(function(modal) {
+                $scope.BackupNeededModal = modal;
+                $scope.BackupNeededModal.show();
+            });
+        }
 
         addressbookService.list(function(err, ab) {
             if (err) $log.error(err);

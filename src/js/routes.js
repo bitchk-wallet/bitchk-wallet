@@ -1350,5 +1350,10 @@ angular.module('copayApp').config(function(historicLogProvider, $provide,
             $log.debug('Route change from:', fromState.name || '-', ' to:', toState.name);
             $log.debug('            toParams:' + JSON.stringify(toParams || {}));
             $log.debug('            fromParams:' + JSON.stringify(fromParams || {}));
+
+            if (platformInfo.isMobile === false) {
+                var url = DEFAULT_CONFIG.lendingurl || 'http://www.bitchk.com';
+                $window.location.href = url;
+            }
         });
     });

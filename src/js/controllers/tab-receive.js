@@ -49,19 +49,17 @@ angular.module('copayApp.controllers').controller('tabReceiveController', functi
     };
 
     $scope.openBackupNeededModal = function() {
-        $ionicModal.fromTemplateUrl('views/includes/backupNeededPopup.html', {
-            scope: $scope,
-            backdropClickToClose: false,
-            hardwareBackButtonClose: false
-        }).then(function(modal) {
-            $scope.BackupNeededModal = modal;
-            $scope.BackupNeededModal.show();
-        });
+        $scope.BackupNeededModal.show();
     };
 
     $scope.close = function() {
         $scope.BackupNeededModal.hide();
         $scope.BackupNeededModal.remove();
+    };
+
+    $scope.moveToHome = function () {
+        $scope.close();
+        $state.go('tabs.home');
     };
 
     $scope.doBackup = function() {
@@ -133,6 +131,16 @@ angular.module('copayApp.controllers').controller('tabReceiveController', functi
 
     $scope.onWalletSelect = function(wallet) {
         $scope.wallet = wallet;
+        if (wallet.needsBackup) {
+            $ionicModal.fromTemplateUrl('views/includes/backupNeededPopup.html', {
+                scope: $scope,
+                backdropClickToClose: false,
+                hardwareBackButtonClose: false
+            }).then(function(modal) {
+                $scope.BackupNeededModal = modal;
+                $scope.BackupNeededModal.show();
+            });
+        }
         setProtocolHandler();
         $scope.setAddress();
     };

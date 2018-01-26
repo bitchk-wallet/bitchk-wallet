@@ -911,6 +911,10 @@ msgstr "사용불가"
 msgid "Do it later"
 msgstr "나중에 할게요"
 
+#: www/views/includes/backupNeededPopup.html:11
+msgid "Move to Home"
+msgstr "홈 탭으로 가기"
+
 #: www/views/tab-export-file.html:29
 msgid "Do not include private key"
 msgstr "개인키를 포함하지 마세요"
