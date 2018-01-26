@@ -165,6 +165,18 @@ angular.module('copayApp.controllers').controller('walletDetailsController', fun
         $scope.BackupNeededModal.remove();
     };
 
+    $scope.doBackup = function() {
+        $scope.close();
+        $scope.goToBackupFlow();
+    };
+
+    $scope.goToBackupFlow = function() {
+        $state.go('tabs.receive.backupWarning', {
+            from: 'tabs.receive',
+            walletId: $scope.wallet.credentials.walletId
+        });
+    };
+
     $scope.moveToHome = function () {
         $scope.close();
         $state.go('tabs.home');
