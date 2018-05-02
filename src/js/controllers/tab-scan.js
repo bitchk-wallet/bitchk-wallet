@@ -99,7 +99,6 @@ angular.module('copayApp.controllers').controller('tabScanController', function(
   });
 
   function handleSuccessfulScan(contents){
-    $log.debug('Scan returned: "' + contents + '"');
     scannerService.pausePreview();
     incomingData.redir(contents);
   }
