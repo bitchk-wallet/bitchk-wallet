@@ -34,10 +34,11 @@ $relish-success: 1.3s;
     animation-duration: .2s;
     animation-delay: $relish-success;
     animation-fill-mode: forwards;
-    opacity: 0;
+    opacity: 1;
     button {
       position: absolute;
       right: 0;
+      color: #898c83;
     }
   }
   .heading {
