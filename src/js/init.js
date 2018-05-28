@@ -10,7 +10,6 @@ angular.element(document).ready(function() {
 
   function handleOpenURL(url) {
     if ('cordova' in window) {
-      console.log('DEEP LINK:' + url);
       cordova.fireDocumentEvent('handleopenurl', {
         url: url
       });
