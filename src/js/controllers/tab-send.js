@@ -64,19 +64,19 @@ angular.module('copayApp.controllers').controller('tabSendController', function 
     if ($scope.showTransferCard) {
       var walletsToTransfer = $scope.wallets;
       var newWallet = [];
-      lodash.each(networkResult, (data, key) => {
+      lodash.each(networkResult,function (data, key) {
         if (data > 1) {
           var temp = lodash.filter(walletsToTransfer, function (item) {
             return item.network == key;
           });
           var balance = 0;
-          lodash.each(temp, (data2) => {
+          lodash.each(temp,function (data2) {
             // console.log(data2);
             balance += data2.cachedStatus.availableBalanceSat;
             // newWallet.push(data2);
           });
           if (balance > 0) {
-            lodash.each(temp, (data2) => {
+            lodash.each(temp, function (data2) {
               // console.log(data2);
               balance += data2.cachedStatus.availableBalanceSat;
               newWallet.push(data2);
