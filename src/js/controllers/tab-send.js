@@ -57,8 +57,12 @@ angular.module('copayApp.controllers').controller('tabSendController', function 
   var updateWalletsList = function () {
 
     var networkResult = lodash.countBy($scope.wallets, 'network');
-
-    
+    var count =0;
+    lodash.each(networkResult, function(data,key){
+      if(data>1){
+        count+=data;
+      }
+    });
     $scope.showTransferCard = $scope.hasWallets && (networkResult.livenet > 1 || networkResult.testnet > 1 || count > 1);
 
     if ($scope.showTransferCard) {
