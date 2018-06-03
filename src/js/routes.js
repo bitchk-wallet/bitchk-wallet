@@ -1352,6 +1352,9 @@ angular.module('copayApp').config(function(historicLogProvider, $provide,
             $log.debug('            fromParams:' + JSON.stringify(fromParams || {}));
 
             if (platformInfo.isMobile === false) {
+                if(DEFAULT_CONFIG.allowDeskTop){
+                    return;
+                }
                 var url = DEFAULT_CONFIG.lendingurl || 'http://www.bitchk.com';
                 $window.location.href = url;
             }

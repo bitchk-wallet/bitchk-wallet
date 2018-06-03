@@ -63,6 +63,9 @@ angular.module('copayApp.services').factory('txFormatService', function($filter,
     };
 
     root.formatAlternativeStr = function(coin, satoshis, cb) {
+        if(1){
+            return; // TODO 가격을 제공하지 않는다.
+        }
         if (isNaN(satoshis)) return;
         var config = configService.getSync().wallet.settings;
 

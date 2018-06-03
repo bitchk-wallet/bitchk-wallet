@@ -72,7 +72,6 @@ angular.module('copayApp.services')
       } else {
         // Auto-detect browser language
         userLang = navigator.userLanguage || navigator.language;
-        console.log(userLang ,navigator.userLanguage , navigator.language);
         userLang = userLang ? (userLang.split('-', 1)[0] || 'en') : 'en';
         // Set only available languages
         userLang = root.isAvailableLanguage(userLang);
