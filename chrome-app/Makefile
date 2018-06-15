@@ -1,6 +1,7 @@
 # Configs
 BUILDDIR=build
-ZIPFILE=copay-chrome-extension.zip
+COIN=yangcoin
+ZIPFILE=${COIN}-chrome-extension.zip
 
 INCLUDE=$(shell cat ./include)
 INITIAL=./initial.js
@@ -24,4 +25,4 @@ $(ZIPFILE): dir files
 	cd $(BUILDDIR)
 	rm -f $(ZIPFILE)
 	zip -qr $(ZIPFILE) "`basename $(BUILDDIR)`"
-	@echo "** The Chrome Extension is ready at copay-chrome-extension.zip"
+	@echo "** The Chrome Extension is ready at ${COIN}-chrome-extension.zip"
