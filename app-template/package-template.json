@@ -59,7 +59,7 @@
         "bitauth": "^0.2.1",
         "bitcore-wallet-client": "https://github.com/bitchk-wallet/bitcore-wallet-client.git#bitchk",
         "bower": "^1.7.9",
-        "cordova-android": "5.1.1",
+        "cordova-android": "6.3.0",
         "cordova-custom-config": "^3.0.5",
         "cordova-plugin-qrscanner": "^2.5.0",
         "coveralls": "^2.11.9",
