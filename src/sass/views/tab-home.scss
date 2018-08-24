@@ -120,7 +120,7 @@
         &__logo {
             height: $v-logo-height;
             position: relative;
-            top: 3px;
+            top: $v-logo-top;
         }
         &__wallet {
             &__multisig-number {

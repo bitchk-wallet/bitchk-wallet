@@ -1,7 +1,7 @@
 $relish-success: 1.3s;
 
 #onboarding-collect-email {
-  background: rgb(17, 209, 166);
+  background: $v-onboarding-collect-email-bg-color;
 
   #success-container {
     top: 41vh;
