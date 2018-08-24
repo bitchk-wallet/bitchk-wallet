@@ -121,3 +121,5 @@ app-template/package-template.json
 *.apk
 .eslintrc.js
 .vscode/plugins.json
+
+variables.scss
