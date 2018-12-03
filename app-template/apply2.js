@@ -118,6 +118,6 @@ fs.copySync(configDir + '/google-services.json', '../google-services.json');
 
 copyDir(configDir + '/img', '../www/img/app');
 fs.copySync(configDir + '/sass/overrides.scss', '../src/sass/app/overrides.scss');
-fs.copySync(configDir + '/sass/variables.scss', '../src/sass/variables.scss');
+// fs.copySync(configDir + '/sass/variables.scss', '../src/sass/variables.scss');
 
 console.log("apply.js finished. \n\n");
