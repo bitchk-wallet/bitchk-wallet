@@ -122,3 +122,4 @@ app-template/package-template.json
 .eslintrc.js
 .vscode/plugins.json
 *.zip
+.vscode/typings/cordova/cordova.d.ts
